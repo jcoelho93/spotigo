@@ -11,10 +11,10 @@ package openapi
 
 import (
 	"context"
+	openapiclient "github.com/jcoelho93/spotigo"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
 )
 
 func Test_openapi_LibraryApiService(t *testing.T) {
@@ -24,7 +24,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService ChangePlaylistDetails", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var playlistId string
 
@@ -37,7 +37,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService CheckCurrentUserFollows", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.LibraryApi.CheckCurrentUserFollows(context.Background()).Execute()
 
@@ -49,7 +49,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService CheckUsersSavedAlbums", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.LibraryApi.CheckUsersSavedAlbums(context.Background()).Execute()
 
@@ -61,7 +61,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService CheckUsersSavedAudiobooks", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.LibraryApi.CheckUsersSavedAudiobooks(context.Background()).Execute()
 
@@ -73,7 +73,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService CheckUsersSavedEpisodes", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.LibraryApi.CheckUsersSavedEpisodes(context.Background()).Execute()
 
@@ -85,7 +85,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService CheckUsersSavedShows", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.LibraryApi.CheckUsersSavedShows(context.Background()).Execute()
 
@@ -97,7 +97,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService CheckUsersSavedTracks", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.LibraryApi.CheckUsersSavedTracks(context.Background()).Execute()
 
@@ -109,7 +109,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService CreatePlaylist", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var userId string
 
@@ -123,7 +123,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService FollowArtistsUsers", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.LibraryApi.FollowArtistsUsers(context.Background()).Execute()
 
@@ -134,7 +134,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService GetAListOfCurrentUsersPlaylists", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.LibraryApi.GetAListOfCurrentUsersPlaylists(context.Background()).Execute()
 
@@ -146,7 +146,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService GetFollowed", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.LibraryApi.GetFollowed(context.Background()).Execute()
 
@@ -158,7 +158,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService GetUsersSavedAlbums", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.LibraryApi.GetUsersSavedAlbums(context.Background()).Execute()
 
@@ -170,7 +170,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService GetUsersSavedAudiobooks", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.LibraryApi.GetUsersSavedAudiobooks(context.Background()).Execute()
 
@@ -182,7 +182,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService GetUsersSavedEpisodes", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.LibraryApi.GetUsersSavedEpisodes(context.Background()).Execute()
 
@@ -194,7 +194,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService GetUsersSavedShows", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.LibraryApi.GetUsersSavedShows(context.Background()).Execute()
 
@@ -206,7 +206,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService GetUsersSavedTracks", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.LibraryApi.GetUsersSavedTracks(context.Background()).Execute()
 
@@ -218,7 +218,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService GetUsersTopArtists", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.LibraryApi.GetUsersTopArtists(context.Background()).Execute()
 
@@ -230,7 +230,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService GetUsersTopTracks", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.LibraryApi.GetUsersTopTracks(context.Background()).Execute()
 
@@ -242,7 +242,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService RemoveAlbumsUser", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.LibraryApi.RemoveAlbumsUser(context.Background()).Execute()
 
@@ -253,7 +253,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService RemoveAudiobooksUser", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.LibraryApi.RemoveAudiobooksUser(context.Background()).Execute()
 
@@ -264,7 +264,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService RemoveEpisodesUser", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.LibraryApi.RemoveEpisodesUser(context.Background()).Execute()
 
@@ -275,7 +275,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService RemoveShowsUser", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.LibraryApi.RemoveShowsUser(context.Background()).Execute()
 
@@ -286,7 +286,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService RemoveTracksUser", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.LibraryApi.RemoveTracksUser(context.Background()).Execute()
 
@@ -297,7 +297,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService SaveAlbumsUser", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.LibraryApi.SaveAlbumsUser(context.Background()).Execute()
 
@@ -308,7 +308,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService SaveAudiobooksUser", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.LibraryApi.SaveAudiobooksUser(context.Background()).Execute()
 
@@ -319,7 +319,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService SaveEpisodesUser", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.LibraryApi.SaveEpisodesUser(context.Background()).Execute()
 
@@ -330,7 +330,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService SaveShowsUser", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.LibraryApi.SaveShowsUser(context.Background()).Execute()
 
@@ -341,7 +341,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService SaveTracksUser", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.LibraryApi.SaveTracksUser(context.Background()).Execute()
 
@@ -352,7 +352,7 @@ func Test_openapi_LibraryApiService(t *testing.T) {
 
 	t.Run("Test LibraryApiService UnfollowArtistsUsers", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.LibraryApi.UnfollowArtistsUsers(context.Background()).Execute()
 

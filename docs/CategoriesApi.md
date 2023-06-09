@@ -4,9 +4,9 @@ All URIs are relative to *https://api.spotify.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GetACategoriesPlaylists**](CategoriesApi.md#GetACategoriesPlaylists) | **Get** /browse/categories/{category_id}/playlists | Get Category&#39;s Playlists 
-[**GetACategory**](CategoriesApi.md#GetACategory) | **Get** /browse/categories/{category_id} | Get Single Browse Category 
-[**GetCategories**](CategoriesApi.md#GetCategories) | **Get** /browse/categories | Get Several Browse Categories 
+[**GetACategoriesPlaylists**](CategoriesApi.md#GetACategoriesPlaylists) | **Get** /browse/categories/{category_id}/playlists | Get Category&#39;s Playlists
+[**GetACategory**](CategoriesApi.md#GetACategory) | **Get** /browse/categories/{category_id} | Get Single Browse Category
+[**GetCategories**](CategoriesApi.md#GetCategories) | **Get** /browse/categories | Get Several Browse Categories
 
 
 
@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 > PagingFeaturedPlaylistObject GetACategoriesPlaylists(ctx, categoryId).Country(country).Limit(limit).Offset(offset).Execute()
 
-Get Category's Playlists 
+Get Category's Playlists
 
 
 
@@ -27,11 +27,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    categoryId := "dinner" // string | 
+    categoryId := "dinner" // string |
     country := "SE" // string |  (optional)
     limit := int32(10) // int32 |  (optional) (default to 20)
     offset := int32(5) // int32 |  (optional) (default to 0)
@@ -54,7 +54,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**categoryId** | **string** |  | 
+**categoryId** | **string** |  |
 
 ### Other Parameters
 
@@ -64,7 +64,7 @@ Other parameters are passed through a pointer to a apiGetACategoriesPlaylistsReq
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **country** | **string** |  | 
+ **country** | **string** |  |
  **limit** | **int32** |  | [default to 20]
  **offset** | **int32** |  | [default to 0]
 
@@ -90,7 +90,7 @@ Name | Type | Description  | Notes
 
 > CategoryObject GetACategory(ctx, categoryId).Country(country).Locale(locale).Execute()
 
-Get Single Browse Category 
+Get Single Browse Category
 
 
 
@@ -103,11 +103,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    categoryId := "dinner" // string | 
+    categoryId := "dinner" // string |
     country := "SE" // string |  (optional)
     locale := "sv_SE" // string |  (optional)
 
@@ -129,7 +129,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**categoryId** | **string** |  | 
+**categoryId** | **string** |  |
 
 ### Other Parameters
 
@@ -139,8 +139,8 @@ Other parameters are passed through a pointer to a apiGetACategoryRequest struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **country** | **string** |  | 
- **locale** | **string** |  | 
+ **country** | **string** |  |
+ **locale** | **string** |  |
 
 ### Return type
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 
 > GetCategories200Response GetCategories(ctx).Country(country).Locale(locale).Limit(limit).Offset(offset).Execute()
 
-Get Several Browse Categories 
+Get Several Browse Categories
 
 
 
@@ -177,7 +177,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
@@ -209,8 +209,8 @@ Other parameters are passed through a pointer to a apiGetCategoriesRequest struc
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **country** | **string** |  | 
- **locale** | **string** |  | 
+ **country** | **string** |  |
+ **locale** | **string** |  |
  **limit** | **int32** |  | [default to 20]
  **offset** | **int32** |  | [default to 0]
 

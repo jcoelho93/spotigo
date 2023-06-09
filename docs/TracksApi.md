@@ -4,23 +4,23 @@ All URIs are relative to *https://api.spotify.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AddTracksToPlaylist**](TracksApi.md#AddTracksToPlaylist) | **Post** /playlists/{playlist_id}/tracks | Add Items to Playlist 
-[**CheckUsersSavedTracks**](TracksApi.md#CheckUsersSavedTracks) | **Get** /me/tracks/contains | Check User&#39;s Saved Tracks 
-[**GetAnAlbumsTracks**](TracksApi.md#GetAnAlbumsTracks) | **Get** /albums/{id}/tracks | Get Album Tracks 
-[**GetAnArtistsTopTracks**](TracksApi.md#GetAnArtistsTopTracks) | **Get** /artists/{id}/top-tracks | Get Artist&#39;s Top Tracks 
-[**GetAudioAnalysis**](TracksApi.md#GetAudioAnalysis) | **Get** /audio-analysis/{id} | Get Track&#39;s Audio Analysis 
-[**GetAudioFeatures**](TracksApi.md#GetAudioFeatures) | **Get** /audio-features/{id} | Get Track&#39;s Audio Features 
-[**GetPlaylistsTracks**](TracksApi.md#GetPlaylistsTracks) | **Get** /playlists/{playlist_id}/tracks | Get Playlist Items 
-[**GetRecommendations**](TracksApi.md#GetRecommendations) | **Get** /recommendations | Get Recommendations 
-[**GetSeveralAudioFeatures**](TracksApi.md#GetSeveralAudioFeatures) | **Get** /audio-features | Get Tracks&#39; Audio Features 
-[**GetSeveralTracks**](TracksApi.md#GetSeveralTracks) | **Get** /tracks | Get Several Tracks 
-[**GetTrack**](TracksApi.md#GetTrack) | **Get** /tracks/{id} | Get Track 
-[**GetUsersSavedTracks**](TracksApi.md#GetUsersSavedTracks) | **Get** /me/tracks | Get User&#39;s Saved Tracks 
-[**GetUsersTopTracks**](TracksApi.md#GetUsersTopTracks) | **Get** /me/top/tracks | Get User&#39;s Top Tracks 
-[**RemoveTracksPlaylist**](TracksApi.md#RemoveTracksPlaylist) | **Delete** /playlists/{playlist_id}/tracks | Remove Playlist Items 
-[**RemoveTracksUser**](TracksApi.md#RemoveTracksUser) | **Delete** /me/tracks | Remove User&#39;s Saved Tracks 
-[**ReorderOrReplacePlaylistsTracks**](TracksApi.md#ReorderOrReplacePlaylistsTracks) | **Put** /playlists/{playlist_id}/tracks | Update Playlist Items 
-[**SaveTracksUser**](TracksApi.md#SaveTracksUser) | **Put** /me/tracks | Save Tracks for Current User 
+[**AddTracksToPlaylist**](TracksApi.md#AddTracksToPlaylist) | **Post** /playlists/{playlist_id}/tracks | Add Items to Playlist
+[**CheckUsersSavedTracks**](TracksApi.md#CheckUsersSavedTracks) | **Get** /me/tracks/contains | Check User&#39;s Saved Tracks
+[**GetAnAlbumsTracks**](TracksApi.md#GetAnAlbumsTracks) | **Get** /albums/{id}/tracks | Get Album Tracks
+[**GetAnArtistsTopTracks**](TracksApi.md#GetAnArtistsTopTracks) | **Get** /artists/{id}/top-tracks | Get Artist&#39;s Top Tracks
+[**GetAudioAnalysis**](TracksApi.md#GetAudioAnalysis) | **Get** /audio-analysis/{id} | Get Track&#39;s Audio Analysis
+[**GetAudioFeatures**](TracksApi.md#GetAudioFeatures) | **Get** /audio-features/{id} | Get Track&#39;s Audio Features
+[**GetPlaylistsTracks**](TracksApi.md#GetPlaylistsTracks) | **Get** /playlists/{playlist_id}/tracks | Get Playlist Items
+[**GetRecommendations**](TracksApi.md#GetRecommendations) | **Get** /recommendations | Get Recommendations
+[**GetSeveralAudioFeatures**](TracksApi.md#GetSeveralAudioFeatures) | **Get** /audio-features | Get Tracks&#39; Audio Features
+[**GetSeveralTracks**](TracksApi.md#GetSeveralTracks) | **Get** /tracks | Get Several Tracks
+[**GetTrack**](TracksApi.md#GetTrack) | **Get** /tracks/{id} | Get Track
+[**GetUsersSavedTracks**](TracksApi.md#GetUsersSavedTracks) | **Get** /me/tracks | Get User&#39;s Saved Tracks
+[**GetUsersTopTracks**](TracksApi.md#GetUsersTopTracks) | **Get** /me/top/tracks | Get User&#39;s Top Tracks
+[**RemoveTracksPlaylist**](TracksApi.md#RemoveTracksPlaylist) | **Delete** /playlists/{playlist_id}/tracks | Remove Playlist Items
+[**RemoveTracksUser**](TracksApi.md#RemoveTracksUser) | **Delete** /me/tracks | Remove User&#39;s Saved Tracks
+[**ReorderOrReplacePlaylistsTracks**](TracksApi.md#ReorderOrReplacePlaylistsTracks) | **Put** /playlists/{playlist_id}/tracks | Update Playlist Items
+[**SaveTracksUser**](TracksApi.md#SaveTracksUser) | **Put** /me/tracks | Save Tracks for Current User
 
 
 
@@ -28,7 +28,7 @@ Method | HTTP request | Description
 
 > ReorderOrReplacePlaylistsTracks200Response AddTracksToPlaylist(ctx, playlistId).Position(position).Uris(uris).RequestBody(requestBody).Execute()
 
-Add Items to Playlist 
+Add Items to Playlist
 
 
 
@@ -41,11 +41,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string | 
+    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string |
     position := int32(0) // int32 |  (optional)
     uris := "spotify:track:4iV5W9uYEdYUVa79Axb7Rh,spotify:track:1301WleyT98MSxVHPZCA6M" // string |  (optional)
     requestBody := map[string]interface{}{"key": interface{}(123)} // map[string]interface{} |  (optional)
@@ -68,7 +68,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**playlistId** | **string** |  | 
+**playlistId** | **string** |  |
 
 ### Other Parameters
 
@@ -78,9 +78,9 @@ Other parameters are passed through a pointer to a apiAddTracksToPlaylistRequest
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **position** | **int32** |  | 
- **uris** | **string** |  | 
- **requestBody** | **map[string]interface{}** |  | 
+ **position** | **int32** |  |
+ **uris** | **string** |  |
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 
@@ -104,7 +104,7 @@ Name | Type | Description  | Notes
 
 > []bool CheckUsersSavedTracks(ctx).Ids(ids).Execute()
 
-Check User's Saved Tracks 
+Check User's Saved Tracks
 
 
 
@@ -117,11 +117,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    ids := "7ouMYWpwJ422jRcDASZB7P,4VqPOruhp5EdPBeR92t6lQ,2takcwOaAZWiXQijPHIx7B" // string | 
+    ids := "7ouMYWpwJ422jRcDASZB7P,4VqPOruhp5EdPBeR92t6lQ,2takcwOaAZWiXQijPHIx7B" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -146,7 +146,7 @@ Other parameters are passed through a pointer to a apiCheckUsersSavedTracksReque
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
+ **ids** | **string** |  |
 
 ### Return type
 
@@ -170,7 +170,7 @@ Name | Type | Description  | Notes
 
 > PagingSimplifiedTrackObject GetAnAlbumsTracks(ctx, id).Market(market).Limit(limit).Offset(offset).Execute()
 
-Get Album Tracks 
+Get Album Tracks
 
 
 
@@ -183,11 +183,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    id := "4aawyAB9vmqN3uQ7FjRGTy" // string | 
+    id := "4aawyAB9vmqN3uQ7FjRGTy" // string |
     market := "ES" // string |  (optional)
     limit := int32(10) // int32 |  (optional) (default to 20)
     offset := int32(5) // int32 |  (optional) (default to 0)
@@ -210,7 +210,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** |  | 
+**id** | **string** |  |
 
 ### Other Parameters
 
@@ -220,7 +220,7 @@ Other parameters are passed through a pointer to a apiGetAnAlbumsTracksRequest s
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **market** | **string** |  | 
+ **market** | **string** |  |
  **limit** | **int32** |  | [default to 20]
  **offset** | **int32** |  | [default to 0]
 
@@ -246,7 +246,7 @@ Name | Type | Description  | Notes
 
 > GetAnArtistsTopTracks200Response GetAnArtistsTopTracks(ctx, id).Market(market).Execute()
 
-Get Artist's Top Tracks 
+Get Artist's Top Tracks
 
 
 
@@ -259,11 +259,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    id := "0TnOYISbd1XYRBk9myaseg" // string | 
+    id := "0TnOYISbd1XYRBk9myaseg" // string |
     market := "ES" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -284,7 +284,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** |  | 
+**id** | **string** |  |
 
 ### Other Parameters
 
@@ -294,7 +294,7 @@ Other parameters are passed through a pointer to a apiGetAnArtistsTopTracksReque
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **market** | **string** |  | 
+ **market** | **string** |  |
 
 ### Return type
 
@@ -318,7 +318,7 @@ Name | Type | Description  | Notes
 
 > AudioAnalysisObject GetAudioAnalysis(ctx, id).Execute()
 
-Get Track's Audio Analysis 
+Get Track's Audio Analysis
 
 
 
@@ -331,11 +331,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    id := "11dFghVXANMlKmJXsNCbNl" // string | 
+    id := "11dFghVXANMlKmJXsNCbNl" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -355,7 +355,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** |  | 
+**id** | **string** |  |
 
 ### Other Parameters
 
@@ -388,7 +388,7 @@ Name | Type | Description  | Notes
 
 > AudioFeaturesObject GetAudioFeatures(ctx, id).Execute()
 
-Get Track's Audio Features 
+Get Track's Audio Features
 
 
 
@@ -401,11 +401,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    id := "11dFghVXANMlKmJXsNCbNl" // string | 
+    id := "11dFghVXANMlKmJXsNCbNl" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -425,7 +425,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** |  | 
+**id** | **string** |  |
 
 ### Other Parameters
 
@@ -458,7 +458,7 @@ Name | Type | Description  | Notes
 
 > PagingPlaylistTrackObject GetPlaylistsTracks(ctx, playlistId).Market(market).Fields(fields).Limit(limit).Offset(offset).AdditionalTypes(additionalTypes).Execute()
 
-Get Playlist Items 
+Get Playlist Items
 
 
 
@@ -471,11 +471,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string | 
+    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string |
     market := "ES" // string |  (optional)
     fields := "items(added_by.id,track(name,href,album(name,href)))" // string |  (optional)
     limit := int32(10) // int32 |  (optional) (default to 20)
@@ -500,7 +500,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**playlistId** | **string** |  | 
+**playlistId** | **string** |  |
 
 ### Other Parameters
 
@@ -510,11 +510,11 @@ Other parameters are passed through a pointer to a apiGetPlaylistsTracksRequest 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **market** | **string** |  | 
- **fields** | **string** |  | 
+ **market** | **string** |  |
+ **fields** | **string** |  |
  **limit** | **int32** |  | [default to 20]
  **offset** | **int32** |  | [default to 0]
- **additionalTypes** | **string** |  | 
+ **additionalTypes** | **string** |  |
 
 ### Return type
 
@@ -538,7 +538,7 @@ Name | Type | Description  | Notes
 
 > RecommendationsObject GetRecommendations(ctx).Limit(limit).Market(market).SeedArtists(seedArtists).SeedGenres(seedGenres).SeedTracks(seedTracks).MinAcousticness(minAcousticness).MaxAcousticness(maxAcousticness).TargetAcousticness(targetAcousticness).MinDanceability(minDanceability).MaxDanceability(maxDanceability).TargetDanceability(targetDanceability).MinDurationMs(minDurationMs).MaxDurationMs(maxDurationMs).TargetDurationMs(targetDurationMs).MinEnergy(minEnergy).MaxEnergy(maxEnergy).TargetEnergy(targetEnergy).MinInstrumentalness(minInstrumentalness).MaxInstrumentalness(maxInstrumentalness).TargetInstrumentalness(targetInstrumentalness).MinKey(minKey).MaxKey(maxKey).TargetKey(targetKey).MinLiveness(minLiveness).MaxLiveness(maxLiveness).TargetLiveness(targetLiveness).MinLoudness(minLoudness).MaxLoudness(maxLoudness).TargetLoudness(targetLoudness).MinMode(minMode).MaxMode(maxMode).TargetMode(targetMode).MinPopularity(minPopularity).MaxPopularity(maxPopularity).TargetPopularity(targetPopularity).MinSpeechiness(minSpeechiness).MaxSpeechiness(maxSpeechiness).TargetSpeechiness(targetSpeechiness).MinTempo(minTempo).MaxTempo(maxTempo).TargetTempo(targetTempo).MinTimeSignature(minTimeSignature).MaxTimeSignature(maxTimeSignature).TargetTimeSignature(targetTimeSignature).MinValence(minValence).MaxValence(maxValence).TargetValence(targetValence).Execute()
 
-Get Recommendations 
+Get Recommendations
 
 
 
@@ -551,7 +551,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
@@ -627,52 +627,52 @@ Other parameters are passed through a pointer to a apiGetRecommendationsRequest 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **limit** | **int32** |  | [default to 20]
- **market** | **string** |  | 
- **seedArtists** | **string** |  | 
- **seedGenres** | **string** |  | 
- **seedTracks** | **string** |  | 
- **minAcousticness** | **float32** |  | 
- **maxAcousticness** | **float32** |  | 
- **targetAcousticness** | **float32** |  | 
- **minDanceability** | **float32** |  | 
- **maxDanceability** | **float32** |  | 
- **targetDanceability** | **float32** |  | 
- **minDurationMs** | **int32** |  | 
- **maxDurationMs** | **int32** |  | 
- **targetDurationMs** | **int32** |  | 
- **minEnergy** | **float32** |  | 
- **maxEnergy** | **float32** |  | 
- **targetEnergy** | **float32** |  | 
- **minInstrumentalness** | **float32** |  | 
- **maxInstrumentalness** | **float32** |  | 
- **targetInstrumentalness** | **float32** |  | 
- **minKey** | **int32** |  | 
- **maxKey** | **int32** |  | 
- **targetKey** | **int32** |  | 
- **minLiveness** | **float32** |  | 
- **maxLiveness** | **float32** |  | 
- **targetLiveness** | **float32** |  | 
- **minLoudness** | **float32** |  | 
- **maxLoudness** | **float32** |  | 
- **targetLoudness** | **float32** |  | 
- **minMode** | **int32** |  | 
- **maxMode** | **int32** |  | 
- **targetMode** | **int32** |  | 
- **minPopularity** | **int32** |  | 
- **maxPopularity** | **int32** |  | 
- **targetPopularity** | **int32** |  | 
- **minSpeechiness** | **float32** |  | 
- **maxSpeechiness** | **float32** |  | 
- **targetSpeechiness** | **float32** |  | 
- **minTempo** | **float32** |  | 
- **maxTempo** | **float32** |  | 
- **targetTempo** | **float32** |  | 
- **minTimeSignature** | **int32** |  | 
- **maxTimeSignature** | **int32** |  | 
- **targetTimeSignature** | **int32** |  | 
- **minValence** | **float32** |  | 
- **maxValence** | **float32** |  | 
- **targetValence** | **float32** |  | 
+ **market** | **string** |  |
+ **seedArtists** | **string** |  |
+ **seedGenres** | **string** |  |
+ **seedTracks** | **string** |  |
+ **minAcousticness** | **float32** |  |
+ **maxAcousticness** | **float32** |  |
+ **targetAcousticness** | **float32** |  |
+ **minDanceability** | **float32** |  |
+ **maxDanceability** | **float32** |  |
+ **targetDanceability** | **float32** |  |
+ **minDurationMs** | **int32** |  |
+ **maxDurationMs** | **int32** |  |
+ **targetDurationMs** | **int32** |  |
+ **minEnergy** | **float32** |  |
+ **maxEnergy** | **float32** |  |
+ **targetEnergy** | **float32** |  |
+ **minInstrumentalness** | **float32** |  |
+ **maxInstrumentalness** | **float32** |  |
+ **targetInstrumentalness** | **float32** |  |
+ **minKey** | **int32** |  |
+ **maxKey** | **int32** |  |
+ **targetKey** | **int32** |  |
+ **minLiveness** | **float32** |  |
+ **maxLiveness** | **float32** |  |
+ **targetLiveness** | **float32** |  |
+ **minLoudness** | **float32** |  |
+ **maxLoudness** | **float32** |  |
+ **targetLoudness** | **float32** |  |
+ **minMode** | **int32** |  |
+ **maxMode** | **int32** |  |
+ **targetMode** | **int32** |  |
+ **minPopularity** | **int32** |  |
+ **maxPopularity** | **int32** |  |
+ **targetPopularity** | **int32** |  |
+ **minSpeechiness** | **float32** |  |
+ **maxSpeechiness** | **float32** |  |
+ **targetSpeechiness** | **float32** |  |
+ **minTempo** | **float32** |  |
+ **maxTempo** | **float32** |  |
+ **targetTempo** | **float32** |  |
+ **minTimeSignature** | **int32** |  |
+ **maxTimeSignature** | **int32** |  |
+ **targetTimeSignature** | **int32** |  |
+ **minValence** | **float32** |  |
+ **maxValence** | **float32** |  |
+ **targetValence** | **float32** |  |
 
 ### Return type
 
@@ -696,7 +696,7 @@ Name | Type | Description  | Notes
 
 > GetSeveralAudioFeatures200Response GetSeveralAudioFeatures(ctx).Ids(ids).Execute()
 
-Get Tracks' Audio Features 
+Get Tracks' Audio Features
 
 
 
@@ -709,11 +709,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    ids := "7ouMYWpwJ422jRcDASZB7P,4VqPOruhp5EdPBeR92t6lQ,2takcwOaAZWiXQijPHIx7B" // string | 
+    ids := "7ouMYWpwJ422jRcDASZB7P,4VqPOruhp5EdPBeR92t6lQ,2takcwOaAZWiXQijPHIx7B" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -738,7 +738,7 @@ Other parameters are passed through a pointer to a apiGetSeveralAudioFeaturesReq
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
+ **ids** | **string** |  |
 
 ### Return type
 
@@ -762,7 +762,7 @@ Name | Type | Description  | Notes
 
 > GetAnArtistsTopTracks200Response GetSeveralTracks(ctx).Ids(ids).Market(market).Execute()
 
-Get Several Tracks 
+Get Several Tracks
 
 
 
@@ -775,11 +775,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    ids := "7ouMYWpwJ422jRcDASZB7P,4VqPOruhp5EdPBeR92t6lQ,2takcwOaAZWiXQijPHIx7B" // string | 
+    ids := "7ouMYWpwJ422jRcDASZB7P,4VqPOruhp5EdPBeR92t6lQ,2takcwOaAZWiXQijPHIx7B" // string |
     market := "ES" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -805,8 +805,8 @@ Other parameters are passed through a pointer to a apiGetSeveralTracksRequest st
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
- **market** | **string** |  | 
+ **ids** | **string** |  |
+ **market** | **string** |  |
 
 ### Return type
 
@@ -830,7 +830,7 @@ Name | Type | Description  | Notes
 
 > TrackObject GetTrack(ctx, id).Market(market).Execute()
 
-Get Track 
+Get Track
 
 
 
@@ -843,11 +843,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    id := "11dFghVXANMlKmJXsNCbNl" // string | 
+    id := "11dFghVXANMlKmJXsNCbNl" // string |
     market := "ES" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -868,7 +868,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** |  | 
+**id** | **string** |  |
 
 ### Other Parameters
 
@@ -878,7 +878,7 @@ Other parameters are passed through a pointer to a apiGetTrackRequest struct via
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **market** | **string** |  | 
+ **market** | **string** |  |
 
 ### Return type
 
@@ -902,7 +902,7 @@ Name | Type | Description  | Notes
 
 > PagingSavedTrackObject GetUsersSavedTracks(ctx).Market(market).Limit(limit).Offset(offset).Execute()
 
-Get User's Saved Tracks 
+Get User's Saved Tracks
 
 
 
@@ -915,7 +915,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
@@ -946,7 +946,7 @@ Other parameters are passed through a pointer to a apiGetUsersSavedTracksRequest
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **market** | **string** |  | 
+ **market** | **string** |  |
  **limit** | **int32** |  | [default to 20]
  **offset** | **int32** |  | [default to 0]
 
@@ -972,7 +972,7 @@ Name | Type | Description  | Notes
 
 > PagingTrackObject GetUsersTopTracks(ctx).TimeRange(timeRange).Limit(limit).Offset(offset).Execute()
 
-Get User's Top Tracks 
+Get User's Top Tracks
 
 
 
@@ -985,7 +985,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
@@ -1042,7 +1042,7 @@ Name | Type | Description  | Notes
 
 > ReorderOrReplacePlaylistsTracks200Response RemoveTracksPlaylist(ctx, playlistId).RemoveTracksPlaylistRequest(removeTracksPlaylistRequest).Execute()
 
-Remove Playlist Items 
+Remove Playlist Items
 
 
 
@@ -1055,11 +1055,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string | 
+    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string |
     removeTracksPlaylistRequest := *openapiclient.NewRemoveTracksPlaylistRequest([]openapiclient.RemoveTracksPlaylistRequestTracksInner{*openapiclient.NewRemoveTracksPlaylistRequestTracksInner()}) // RemoveTracksPlaylistRequest |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -1080,7 +1080,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**playlistId** | **string** |  | 
+**playlistId** | **string** |  |
 
 ### Other Parameters
 
@@ -1090,7 +1090,7 @@ Other parameters are passed through a pointer to a apiRemoveTracksPlaylistReques
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **removeTracksPlaylistRequest** | [**RemoveTracksPlaylistRequest**](RemoveTracksPlaylistRequest.md) |  | 
+ **removeTracksPlaylistRequest** | [**RemoveTracksPlaylistRequest**](RemoveTracksPlaylistRequest.md) |  |
 
 ### Return type
 
@@ -1114,7 +1114,7 @@ Name | Type | Description  | Notes
 
 > RemoveTracksUser(ctx).Ids(ids).RequestBody(requestBody).Execute()
 
-Remove User's Saved Tracks 
+Remove User's Saved Tracks
 
 
 
@@ -1127,11 +1127,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    ids := "7ouMYWpwJ422jRcDASZB7P,4VqPOruhp5EdPBeR92t6lQ,2takcwOaAZWiXQijPHIx7B" // string | 
+    ids := "7ouMYWpwJ422jRcDASZB7P,4VqPOruhp5EdPBeR92t6lQ,2takcwOaAZWiXQijPHIx7B" // string |
     requestBody := map[string]interface{}{"key": interface{}(123)} // map[string]interface{} |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -1155,8 +1155,8 @@ Other parameters are passed through a pointer to a apiRemoveTracksUserRequest st
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
- **requestBody** | **map[string]interface{}** |  | 
+ **ids** | **string** |  |
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 
@@ -1180,7 +1180,7 @@ Name | Type | Description  | Notes
 
 > ReorderOrReplacePlaylistsTracks200Response ReorderOrReplacePlaylistsTracks(ctx, playlistId).Uris(uris).RequestBody(requestBody).Execute()
 
-Update Playlist Items 
+Update Playlist Items
 
 
 
@@ -1193,11 +1193,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string | 
+    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string |
     uris := "uris_example" // string |  (optional)
     requestBody := map[string]interface{}{"key": interface{}(123)} // map[string]interface{} |  (optional)
 
@@ -1219,7 +1219,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**playlistId** | **string** |  | 
+**playlistId** | **string** |  |
 
 ### Other Parameters
 
@@ -1229,8 +1229,8 @@ Other parameters are passed through a pointer to a apiReorderOrReplacePlaylistsT
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **uris** | **string** |  | 
- **requestBody** | **map[string]interface{}** |  | 
+ **uris** | **string** |  |
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 
@@ -1254,7 +1254,7 @@ Name | Type | Description  | Notes
 
 > SaveTracksUser(ctx).Ids(ids).RequestBody(requestBody).Execute()
 
-Save Tracks for Current User 
+Save Tracks for Current User
 
 
 
@@ -1267,11 +1267,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    ids := "7ouMYWpwJ422jRcDASZB7P,4VqPOruhp5EdPBeR92t6lQ,2takcwOaAZWiXQijPHIx7B" // string | 
+    ids := "7ouMYWpwJ422jRcDASZB7P,4VqPOruhp5EdPBeR92t6lQ,2takcwOaAZWiXQijPHIx7B" // string |
     requestBody := map[string]interface{}{"key": interface{}(123)} // map[string]interface{} |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -1295,8 +1295,8 @@ Other parameters are passed through a pointer to a apiSaveTracksUserRequest stru
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
- **requestBody** | **map[string]interface{}** |  | 
+ **ids** | **string** |  |
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 

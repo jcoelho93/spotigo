@@ -4,9 +4,9 @@ All URIs are relative to *https://api.spotify.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GetAChapter**](ChaptersApi.md#GetAChapter) | **Get** /chapters/{id} | Get a Chapter 
-[**GetAudiobookChapters**](ChaptersApi.md#GetAudiobookChapters) | **Get** /audiobooks/{id}/chapters | Get Audiobook Chapters 
-[**GetSeveralChapters**](ChaptersApi.md#GetSeveralChapters) | **Get** /chapters | Get Several Chapters 
+[**GetAChapter**](ChaptersApi.md#GetAChapter) | **Get** /chapters/{id} | Get a Chapter
+[**GetAudiobookChapters**](ChaptersApi.md#GetAudiobookChapters) | **Get** /audiobooks/{id}/chapters | Get Audiobook Chapters
+[**GetSeveralChapters**](ChaptersApi.md#GetSeveralChapters) | **Get** /chapters | Get Several Chapters
 
 
 
@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 > ChapterObject GetAChapter(ctx, id).Market(market).Execute()
 
-Get a Chapter 
+Get a Chapter
 
 
 
@@ -27,11 +27,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    id := "0D5wENdkdwbqlrHoaJ9g29" // string | 
+    id := "0D5wENdkdwbqlrHoaJ9g29" // string |
     market := "ES" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -52,7 +52,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** |  | 
+**id** | **string** |  |
 
 ### Other Parameters
 
@@ -62,7 +62,7 @@ Other parameters are passed through a pointer to a apiGetAChapterRequest struct 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **market** | **string** |  | 
+ **market** | **string** |  |
 
 ### Return type
 
@@ -86,7 +86,7 @@ Name | Type | Description  | Notes
 
 > PagingSimplifiedChapterObject GetAudiobookChapters(ctx, id).Market(market).Limit(limit).Offset(offset).Execute()
 
-Get Audiobook Chapters 
+Get Audiobook Chapters
 
 
 
@@ -99,11 +99,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    id := "7iHfbu1YPACw6oZPAFJtqe" // string | 
+    id := "7iHfbu1YPACw6oZPAFJtqe" // string |
     market := "ES" // string |  (optional)
     limit := int32(10) // int32 |  (optional) (default to 20)
     offset := int32(5) // int32 |  (optional) (default to 0)
@@ -126,7 +126,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** |  | 
+**id** | **string** |  |
 
 ### Other Parameters
 
@@ -136,7 +136,7 @@ Other parameters are passed through a pointer to a apiGetAudiobookChaptersReques
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **market** | **string** |  | 
+ **market** | **string** |  |
  **limit** | **int32** |  | [default to 20]
  **offset** | **int32** |  | [default to 0]
 
@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
 
 > GetSeveralChapters200Response GetSeveralChapters(ctx).Ids(ids).Market(market).Execute()
 
-Get Several Chapters 
+Get Several Chapters
 
 
 
@@ -175,11 +175,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    ids := "0IsXVP0JmcB2adSE338GkK,3ZXb8FKZGU0EHALYX6uCzU,0D5wENdkdwbqlrHoaJ9g29" // string | 
+    ids := "0IsXVP0JmcB2adSE338GkK,3ZXb8FKZGU0EHALYX6uCzU,0D5wENdkdwbqlrHoaJ9g29" // string |
     market := "ES" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -205,8 +205,8 @@ Other parameters are passed through a pointer to a apiGetSeveralChaptersRequest 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
- **market** | **string** |  | 
+ **ids** | **string** |  |
+ **market** | **string** |  |
 
 ### Return type
 

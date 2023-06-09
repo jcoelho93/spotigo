@@ -4,21 +4,21 @@ All URIs are relative to *https://api.spotify.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AddToQueue**](PlayerApi.md#AddToQueue) | **Post** /me/player/queue | Add Item to Playback Queue 
-[**GetAUsersAvailableDevices**](PlayerApi.md#GetAUsersAvailableDevices) | **Get** /me/player/devices | Get Available Devices 
-[**GetInformationAboutTheUsersCurrentPlayback**](PlayerApi.md#GetInformationAboutTheUsersCurrentPlayback) | **Get** /me/player | Get Playback State 
-[**GetQueue**](PlayerApi.md#GetQueue) | **Get** /me/player/queue | Get the User&#39;s Queue 
-[**GetRecentlyPlayed**](PlayerApi.md#GetRecentlyPlayed) | **Get** /me/player/recently-played | Get Recently Played Tracks 
-[**GetTheUsersCurrentlyPlayingTrack**](PlayerApi.md#GetTheUsersCurrentlyPlayingTrack) | **Get** /me/player/currently-playing | Get Currently Playing Track 
-[**PauseAUsersPlayback**](PlayerApi.md#PauseAUsersPlayback) | **Put** /me/player/pause | Pause Playback 
-[**SeekToPositionInCurrentlyPlayingTrack**](PlayerApi.md#SeekToPositionInCurrentlyPlayingTrack) | **Put** /me/player/seek | Seek To Position 
-[**SetRepeatModeOnUsersPlayback**](PlayerApi.md#SetRepeatModeOnUsersPlayback) | **Put** /me/player/repeat | Set Repeat Mode 
-[**SetVolumeForUsersPlayback**](PlayerApi.md#SetVolumeForUsersPlayback) | **Put** /me/player/volume | Set Playback Volume 
-[**SkipUsersPlaybackToNextTrack**](PlayerApi.md#SkipUsersPlaybackToNextTrack) | **Post** /me/player/next | Skip To Next 
-[**SkipUsersPlaybackToPreviousTrack**](PlayerApi.md#SkipUsersPlaybackToPreviousTrack) | **Post** /me/player/previous | Skip To Previous 
-[**StartAUsersPlayback**](PlayerApi.md#StartAUsersPlayback) | **Put** /me/player/play | Start/Resume Playback 
-[**ToggleShuffleForUsersPlayback**](PlayerApi.md#ToggleShuffleForUsersPlayback) | **Put** /me/player/shuffle | Toggle Playback Shuffle 
-[**TransferAUsersPlayback**](PlayerApi.md#TransferAUsersPlayback) | **Put** /me/player | Transfer Playback 
+[**AddToQueue**](PlayerApi.md#AddToQueue) | **Post** /me/player/queue | Add Item to Playback Queue
+[**GetAUsersAvailableDevices**](PlayerApi.md#GetAUsersAvailableDevices) | **Get** /me/player/devices | Get Available Devices
+[**GetInformationAboutTheUsersCurrentPlayback**](PlayerApi.md#GetInformationAboutTheUsersCurrentPlayback) | **Get** /me/player | Get Playback State
+[**GetQueue**](PlayerApi.md#GetQueue) | **Get** /me/player/queue | Get the User&#39;s Queue
+[**GetRecentlyPlayed**](PlayerApi.md#GetRecentlyPlayed) | **Get** /me/player/recently-played | Get Recently Played Tracks
+[**GetTheUsersCurrentlyPlayingTrack**](PlayerApi.md#GetTheUsersCurrentlyPlayingTrack) | **Get** /me/player/currently-playing | Get Currently Playing Track
+[**PauseAUsersPlayback**](PlayerApi.md#PauseAUsersPlayback) | **Put** /me/player/pause | Pause Playback
+[**SeekToPositionInCurrentlyPlayingTrack**](PlayerApi.md#SeekToPositionInCurrentlyPlayingTrack) | **Put** /me/player/seek | Seek To Position
+[**SetRepeatModeOnUsersPlayback**](PlayerApi.md#SetRepeatModeOnUsersPlayback) | **Put** /me/player/repeat | Set Repeat Mode
+[**SetVolumeForUsersPlayback**](PlayerApi.md#SetVolumeForUsersPlayback) | **Put** /me/player/volume | Set Playback Volume
+[**SkipUsersPlaybackToNextTrack**](PlayerApi.md#SkipUsersPlaybackToNextTrack) | **Post** /me/player/next | Skip To Next
+[**SkipUsersPlaybackToPreviousTrack**](PlayerApi.md#SkipUsersPlaybackToPreviousTrack) | **Post** /me/player/previous | Skip To Previous
+[**StartAUsersPlayback**](PlayerApi.md#StartAUsersPlayback) | **Put** /me/player/play | Start/Resume Playback
+[**ToggleShuffleForUsersPlayback**](PlayerApi.md#ToggleShuffleForUsersPlayback) | **Put** /me/player/shuffle | Toggle Playback Shuffle
+[**TransferAUsersPlayback**](PlayerApi.md#TransferAUsersPlayback) | **Put** /me/player | Transfer Playback
 
 
 
@@ -26,7 +26,7 @@ Method | HTTP request | Description
 
 > AddToQueue(ctx).Uri(uri).DeviceId(deviceId).Execute()
 
-Add Item to Playback Queue 
+Add Item to Playback Queue
 
 
 
@@ -39,11 +39,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    uri := "spotify:track:4iV5W9uYEdYUVa79Axb7Rh" // string | 
+    uri := "spotify:track:4iV5W9uYEdYUVa79Axb7Rh" // string |
     deviceId := "0d1841b0976bae2a3a310dd74c0f3df354899bc8" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -67,8 +67,8 @@ Other parameters are passed through a pointer to a apiAddToQueueRequest struct v
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **uri** | **string** |  | 
- **deviceId** | **string** |  | 
+ **uri** | **string** |  |
+ **deviceId** | **string** |  |
 
 ### Return type
 
@@ -92,7 +92,7 @@ Name | Type | Description  | Notes
 
 > DevicesObject GetAUsersAvailableDevices(ctx).Execute()
 
-Get Available Devices 
+Get Available Devices
 
 
 
@@ -105,7 +105,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
@@ -153,7 +153,7 @@ Other parameters are passed through a pointer to a apiGetAUsersAvailableDevicesR
 
 > CurrentlyPlayingContextObject GetInformationAboutTheUsersCurrentPlayback(ctx).Market(market).AdditionalTypes(additionalTypes).Execute()
 
-Get Playback State 
+Get Playback State
 
 
 
@@ -166,7 +166,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
@@ -196,8 +196,8 @@ Other parameters are passed through a pointer to a apiGetInformationAboutTheUser
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **market** | **string** |  | 
- **additionalTypes** | **string** |  | 
+ **market** | **string** |  |
+ **additionalTypes** | **string** |  |
 
 ### Return type
 
@@ -221,7 +221,7 @@ Name | Type | Description  | Notes
 
 > QueueObject GetQueue(ctx).Execute()
 
-Get the User's Queue 
+Get the User's Queue
 
 
 
@@ -234,7 +234,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
@@ -282,7 +282,7 @@ Other parameters are passed through a pointer to a apiGetQueueRequest struct via
 
 > CursorPagingPlayHistoryObject GetRecentlyPlayed(ctx).Limit(limit).After(after).Before(before).Execute()
 
-Get Recently Played Tracks 
+Get Recently Played Tracks
 
 
 
@@ -295,7 +295,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
@@ -327,8 +327,8 @@ Other parameters are passed through a pointer to a apiGetRecentlyPlayedRequest s
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **limit** | **int32** |  | [default to 20]
- **after** | **int32** |  | 
- **before** | **int32** |  | 
+ **after** | **int32** |  |
+ **before** | **int32** |  |
 
 ### Return type
 
@@ -352,7 +352,7 @@ Name | Type | Description  | Notes
 
 > CurrentlyPlayingObject GetTheUsersCurrentlyPlayingTrack(ctx).Market(market).AdditionalTypes(additionalTypes).Execute()
 
-Get Currently Playing Track 
+Get Currently Playing Track
 
 
 
@@ -365,7 +365,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
@@ -395,8 +395,8 @@ Other parameters are passed through a pointer to a apiGetTheUsersCurrentlyPlayin
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **market** | **string** |  | 
- **additionalTypes** | **string** |  | 
+ **market** | **string** |  |
+ **additionalTypes** | **string** |  |
 
 ### Return type
 
@@ -420,7 +420,7 @@ Name | Type | Description  | Notes
 
 > PauseAUsersPlayback(ctx).DeviceId(deviceId).Execute()
 
-Pause Playback 
+Pause Playback
 
 
 
@@ -433,7 +433,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
@@ -460,7 +460,7 @@ Other parameters are passed through a pointer to a apiPauseAUsersPlaybackRequest
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **deviceId** | **string** |  | 
+ **deviceId** | **string** |  |
 
 ### Return type
 
@@ -484,7 +484,7 @@ Name | Type | Description  | Notes
 
 > SeekToPositionInCurrentlyPlayingTrack(ctx).PositionMs(positionMs).DeviceId(deviceId).Execute()
 
-Seek To Position 
+Seek To Position
 
 
 
@@ -497,11 +497,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    positionMs := int32(25000) // int32 | 
+    positionMs := int32(25000) // int32 |
     deviceId := "0d1841b0976bae2a3a310dd74c0f3df354899bc8" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -525,8 +525,8 @@ Other parameters are passed through a pointer to a apiSeekToPositionInCurrentlyP
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **positionMs** | **int32** |  | 
- **deviceId** | **string** |  | 
+ **positionMs** | **int32** |  |
+ **deviceId** | **string** |  |
 
 ### Return type
 
@@ -550,7 +550,7 @@ Name | Type | Description  | Notes
 
 > SetRepeatModeOnUsersPlayback(ctx).State(state).DeviceId(deviceId).Execute()
 
-Set Repeat Mode 
+Set Repeat Mode
 
 
 
@@ -563,11 +563,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    state := "context" // string | 
+    state := "context" // string |
     deviceId := "0d1841b0976bae2a3a310dd74c0f3df354899bc8" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -591,8 +591,8 @@ Other parameters are passed through a pointer to a apiSetRepeatModeOnUsersPlayba
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **state** | **string** |  | 
- **deviceId** | **string** |  | 
+ **state** | **string** |  |
+ **deviceId** | **string** |  |
 
 ### Return type
 
@@ -616,7 +616,7 @@ Name | Type | Description  | Notes
 
 > SetVolumeForUsersPlayback(ctx).VolumePercent(volumePercent).DeviceId(deviceId).Execute()
 
-Set Playback Volume 
+Set Playback Volume
 
 
 
@@ -629,11 +629,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    volumePercent := int32(50) // int32 | 
+    volumePercent := int32(50) // int32 |
     deviceId := "0d1841b0976bae2a3a310dd74c0f3df354899bc8" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -657,8 +657,8 @@ Other parameters are passed through a pointer to a apiSetVolumeForUsersPlaybackR
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **volumePercent** | **int32** |  | 
- **deviceId** | **string** |  | 
+ **volumePercent** | **int32** |  |
+ **deviceId** | **string** |  |
 
 ### Return type
 
@@ -682,7 +682,7 @@ Name | Type | Description  | Notes
 
 > SkipUsersPlaybackToNextTrack(ctx).DeviceId(deviceId).Execute()
 
-Skip To Next 
+Skip To Next
 
 
 
@@ -695,7 +695,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
@@ -722,7 +722,7 @@ Other parameters are passed through a pointer to a apiSkipUsersPlaybackToNextTra
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **deviceId** | **string** |  | 
+ **deviceId** | **string** |  |
 
 ### Return type
 
@@ -746,7 +746,7 @@ Name | Type | Description  | Notes
 
 > SkipUsersPlaybackToPreviousTrack(ctx).DeviceId(deviceId).Execute()
 
-Skip To Previous 
+Skip To Previous
 
 
 
@@ -759,7 +759,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
@@ -786,7 +786,7 @@ Other parameters are passed through a pointer to a apiSkipUsersPlaybackToPreviou
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **deviceId** | **string** |  | 
+ **deviceId** | **string** |  |
 
 ### Return type
 
@@ -810,7 +810,7 @@ Name | Type | Description  | Notes
 
 > StartAUsersPlayback(ctx).DeviceId(deviceId).RequestBody(requestBody).Execute()
 
-Start/Resume Playback 
+Start/Resume Playback
 
 
 
@@ -823,7 +823,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
@@ -851,8 +851,8 @@ Other parameters are passed through a pointer to a apiStartAUsersPlaybackRequest
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **deviceId** | **string** |  | 
- **requestBody** | **map[string]interface{}** |  | 
+ **deviceId** | **string** |  |
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 
@@ -876,7 +876,7 @@ Name | Type | Description  | Notes
 
 > ToggleShuffleForUsersPlayback(ctx).State(state).DeviceId(deviceId).Execute()
 
-Toggle Playback Shuffle 
+Toggle Playback Shuffle
 
 
 
@@ -889,11 +889,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    state := true // bool | 
+    state := true // bool |
     deviceId := "0d1841b0976bae2a3a310dd74c0f3df354899bc8" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -917,8 +917,8 @@ Other parameters are passed through a pointer to a apiToggleShuffleForUsersPlayb
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **state** | **bool** |  | 
- **deviceId** | **string** |  | 
+ **state** | **bool** |  |
+ **deviceId** | **string** |  |
 
 ### Return type
 
@@ -942,7 +942,7 @@ Name | Type | Description  | Notes
 
 > TransferAUsersPlayback(ctx).RequestBody(requestBody).Execute()
 
-Transfer Playback 
+Transfer Playback
 
 
 
@@ -955,7 +955,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
@@ -982,7 +982,7 @@ Other parameters are passed through a pointer to a apiTransferAUsersPlaybackRequ
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **requestBody** | **map[string]interface{}** |  | 
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 

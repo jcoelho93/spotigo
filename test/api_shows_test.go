@@ -11,10 +11,10 @@ package openapi
 
 import (
 	"context"
+	openapiclient "github.com/jcoelho93/spotigo"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
 )
 
 func Test_openapi_ShowsApiService(t *testing.T) {
@@ -24,7 +24,7 @@ func Test_openapi_ShowsApiService(t *testing.T) {
 
 	t.Run("Test ShowsApiService CheckUsersSavedShows", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.ShowsApi.CheckUsersSavedShows(context.Background()).Execute()
 
@@ -36,7 +36,7 @@ func Test_openapi_ShowsApiService(t *testing.T) {
 
 	t.Run("Test ShowsApiService GetAShow", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var id string
 
@@ -50,7 +50,7 @@ func Test_openapi_ShowsApiService(t *testing.T) {
 
 	t.Run("Test ShowsApiService GetAShowsEpisodes", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var id string
 
@@ -64,7 +64,7 @@ func Test_openapi_ShowsApiService(t *testing.T) {
 
 	t.Run("Test ShowsApiService GetMultipleShows", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.ShowsApi.GetMultipleShows(context.Background()).Execute()
 
@@ -76,7 +76,7 @@ func Test_openapi_ShowsApiService(t *testing.T) {
 
 	t.Run("Test ShowsApiService GetUsersSavedShows", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.ShowsApi.GetUsersSavedShows(context.Background()).Execute()
 
@@ -88,7 +88,7 @@ func Test_openapi_ShowsApiService(t *testing.T) {
 
 	t.Run("Test ShowsApiService RemoveShowsUser", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.ShowsApi.RemoveShowsUser(context.Background()).Execute()
 
@@ -99,7 +99,7 @@ func Test_openapi_ShowsApiService(t *testing.T) {
 
 	t.Run("Test ShowsApiService SaveShowsUser", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.ShowsApi.SaveShowsUser(context.Background()).Execute()
 

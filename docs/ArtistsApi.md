@@ -4,16 +4,16 @@ All URIs are relative to *https://api.spotify.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CheckCurrentUserFollows**](ArtistsApi.md#CheckCurrentUserFollows) | **Get** /me/following/contains | Check If User Follows Artists or Users 
-[**FollowArtistsUsers**](ArtistsApi.md#FollowArtistsUsers) | **Put** /me/following | Follow Artists or Users 
-[**GetAnArtist**](ArtistsApi.md#GetAnArtist) | **Get** /artists/{id} | Get Artist 
-[**GetAnArtistsAlbums**](ArtistsApi.md#GetAnArtistsAlbums) | **Get** /artists/{id}/albums | Get Artist&#39;s Albums 
-[**GetAnArtistsRelatedArtists**](ArtistsApi.md#GetAnArtistsRelatedArtists) | **Get** /artists/{id}/related-artists | Get Artist&#39;s Related Artists 
-[**GetAnArtistsTopTracks**](ArtistsApi.md#GetAnArtistsTopTracks) | **Get** /artists/{id}/top-tracks | Get Artist&#39;s Top Tracks 
-[**GetFollowed**](ArtistsApi.md#GetFollowed) | **Get** /me/following | Get Followed Artists 
-[**GetMultipleArtists**](ArtistsApi.md#GetMultipleArtists) | **Get** /artists | Get Several Artists 
-[**GetUsersTopArtists**](ArtistsApi.md#GetUsersTopArtists) | **Get** /me/top/artists | Get User&#39;s Top Artists 
-[**UnfollowArtistsUsers**](ArtistsApi.md#UnfollowArtistsUsers) | **Delete** /me/following | Unfollow Artists or Users 
+[**CheckCurrentUserFollows**](ArtistsApi.md#CheckCurrentUserFollows) | **Get** /me/following/contains | Check If User Follows Artists or Users
+[**FollowArtistsUsers**](ArtistsApi.md#FollowArtistsUsers) | **Put** /me/following | Follow Artists or Users
+[**GetAnArtist**](ArtistsApi.md#GetAnArtist) | **Get** /artists/{id} | Get Artist
+[**GetAnArtistsAlbums**](ArtistsApi.md#GetAnArtistsAlbums) | **Get** /artists/{id}/albums | Get Artist&#39;s Albums
+[**GetAnArtistsRelatedArtists**](ArtistsApi.md#GetAnArtistsRelatedArtists) | **Get** /artists/{id}/related-artists | Get Artist&#39;s Related Artists
+[**GetAnArtistsTopTracks**](ArtistsApi.md#GetAnArtistsTopTracks) | **Get** /artists/{id}/top-tracks | Get Artist&#39;s Top Tracks
+[**GetFollowed**](ArtistsApi.md#GetFollowed) | **Get** /me/following | Get Followed Artists
+[**GetMultipleArtists**](ArtistsApi.md#GetMultipleArtists) | **Get** /artists | Get Several Artists
+[**GetUsersTopArtists**](ArtistsApi.md#GetUsersTopArtists) | **Get** /me/top/artists | Get User&#39;s Top Artists
+[**UnfollowArtistsUsers**](ArtistsApi.md#UnfollowArtistsUsers) | **Delete** /me/following | Unfollow Artists or Users
 
 
 
@@ -21,7 +21,7 @@ Method | HTTP request | Description
 
 > []bool CheckCurrentUserFollows(ctx).Type_(type_).Ids(ids).Execute()
 
-Check If User Follows Artists or Users 
+Check If User Follows Artists or Users
 
 
 
@@ -34,12 +34,12 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    type_ := "artist" // string | 
-    ids := "2CIMQHirSU0MQqyYHq0eOx,57dN52uHvrHOxijzpIgu3E,1vCWHaC5f2uS3yhpwWbIA6" // string | 
+    type_ := "artist" // string |
+    ids := "2CIMQHirSU0MQqyYHq0eOx,57dN52uHvrHOxijzpIgu3E,1vCWHaC5f2uS3yhpwWbIA6" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -64,8 +64,8 @@ Other parameters are passed through a pointer to a apiCheckCurrentUserFollowsReq
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **type_** | **string** |  | 
- **ids** | **string** |  | 
+ **type_** | **string** |  |
+ **ids** | **string** |  |
 
 ### Return type
 
@@ -89,7 +89,7 @@ Name | Type | Description  | Notes
 
 > FollowArtistsUsers(ctx).Type_(type_).Ids(ids).RequestBody(requestBody).Execute()
 
-Follow Artists or Users 
+Follow Artists or Users
 
 
 
@@ -102,12 +102,12 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    type_ := "artist" // string | 
-    ids := "2CIMQHirSU0MQqyYHq0eOx,57dN52uHvrHOxijzpIgu3E,1vCWHaC5f2uS3yhpwWbIA6" // string | 
+    type_ := "artist" // string |
+    ids := "2CIMQHirSU0MQqyYHq0eOx,57dN52uHvrHOxijzpIgu3E,1vCWHaC5f2uS3yhpwWbIA6" // string |
     requestBody := map[string]interface{}{"key": interface{}(123)} // map[string]interface{} |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -131,9 +131,9 @@ Other parameters are passed through a pointer to a apiFollowArtistsUsersRequest 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **type_** | **string** |  | 
- **ids** | **string** |  | 
- **requestBody** | **map[string]interface{}** |  | 
+ **type_** | **string** |  |
+ **ids** | **string** |  |
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 
@@ -157,7 +157,7 @@ Name | Type | Description  | Notes
 
 > ArtistObject GetAnArtist(ctx, id).Execute()
 
-Get Artist 
+Get Artist
 
 
 
@@ -170,11 +170,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    id := "0TnOYISbd1XYRBk9myaseg" // string | 
+    id := "0TnOYISbd1XYRBk9myaseg" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -194,7 +194,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** |  | 
+**id** | **string** |  |
 
 ### Other Parameters
 
@@ -227,7 +227,7 @@ Name | Type | Description  | Notes
 
 > PagingSimplifiedAlbumObject GetAnArtistsAlbums(ctx, id).IncludeGroups(includeGroups).Market(market).Limit(limit).Offset(offset).Execute()
 
-Get Artist's Albums 
+Get Artist's Albums
 
 
 
@@ -240,11 +240,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    id := "0TnOYISbd1XYRBk9myaseg" // string | 
+    id := "0TnOYISbd1XYRBk9myaseg" // string |
     includeGroups := "single,appears_on" // string |  (optional)
     market := "ES" // string |  (optional)
     limit := int32(10) // int32 |  (optional) (default to 20)
@@ -268,7 +268,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** |  | 
+**id** | **string** |  |
 
 ### Other Parameters
 
@@ -278,8 +278,8 @@ Other parameters are passed through a pointer to a apiGetAnArtistsAlbumsRequest 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **includeGroups** | **string** |  | 
- **market** | **string** |  | 
+ **includeGroups** | **string** |  |
+ **market** | **string** |  |
  **limit** | **int32** |  | [default to 20]
  **offset** | **int32** |  | [default to 0]
 
@@ -305,7 +305,7 @@ Name | Type | Description  | Notes
 
 > GetMultipleArtists200Response GetAnArtistsRelatedArtists(ctx, id).Execute()
 
-Get Artist's Related Artists 
+Get Artist's Related Artists
 
 
 
@@ -318,11 +318,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    id := "0TnOYISbd1XYRBk9myaseg" // string | 
+    id := "0TnOYISbd1XYRBk9myaseg" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -342,7 +342,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** |  | 
+**id** | **string** |  |
 
 ### Other Parameters
 
@@ -375,7 +375,7 @@ Name | Type | Description  | Notes
 
 > GetAnArtistsTopTracks200Response GetAnArtistsTopTracks(ctx, id).Market(market).Execute()
 
-Get Artist's Top Tracks 
+Get Artist's Top Tracks
 
 
 
@@ -388,11 +388,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    id := "0TnOYISbd1XYRBk9myaseg" // string | 
+    id := "0TnOYISbd1XYRBk9myaseg" // string |
     market := "ES" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -413,7 +413,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** |  | 
+**id** | **string** |  |
 
 ### Other Parameters
 
@@ -423,7 +423,7 @@ Other parameters are passed through a pointer to a apiGetAnArtistsTopTracksReque
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **market** | **string** |  | 
+ **market** | **string** |  |
 
 ### Return type
 
@@ -447,7 +447,7 @@ Name | Type | Description  | Notes
 
 > GetFollowed200Response GetFollowed(ctx).Type_(type_).After(after).Limit(limit).Execute()
 
-Get Followed Artists 
+Get Followed Artists
 
 
 
@@ -460,11 +460,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    type_ := "artist" // string | 
+    type_ := "artist" // string |
     after := "0I2XqVXqHScXjHhk6AYYRe" // string |  (optional)
     limit := int32(10) // int32 |  (optional) (default to 20)
 
@@ -491,8 +491,8 @@ Other parameters are passed through a pointer to a apiGetFollowedRequest struct 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **type_** | **string** |  | 
- **after** | **string** |  | 
+ **type_** | **string** |  |
+ **after** | **string** |  |
  **limit** | **int32** |  | [default to 20]
 
 ### Return type
@@ -517,7 +517,7 @@ Name | Type | Description  | Notes
 
 > GetMultipleArtists200Response GetMultipleArtists(ctx).Ids(ids).Execute()
 
-Get Several Artists 
+Get Several Artists
 
 
 
@@ -530,11 +530,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    ids := "2CIMQHirSU0MQqyYHq0eOx,57dN52uHvrHOxijzpIgu3E,1vCWHaC5f2uS3yhpwWbIA6" // string | 
+    ids := "2CIMQHirSU0MQqyYHq0eOx,57dN52uHvrHOxijzpIgu3E,1vCWHaC5f2uS3yhpwWbIA6" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -559,7 +559,7 @@ Other parameters are passed through a pointer to a apiGetMultipleArtistsRequest 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
+ **ids** | **string** |  |
 
 ### Return type
 
@@ -583,7 +583,7 @@ Name | Type | Description  | Notes
 
 > PagingArtistObject GetUsersTopArtists(ctx).TimeRange(timeRange).Limit(limit).Offset(offset).Execute()
 
-Get User's Top Artists 
+Get User's Top Artists
 
 
 
@@ -596,7 +596,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
@@ -653,7 +653,7 @@ Name | Type | Description  | Notes
 
 > UnfollowArtistsUsers(ctx).Type_(type_).Ids(ids).RequestBody(requestBody).Execute()
 
-Unfollow Artists or Users 
+Unfollow Artists or Users
 
 
 
@@ -666,12 +666,12 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/spotigo"
 )
 
 func main() {
-    type_ := "artist" // string | 
-    ids := "2CIMQHirSU0MQqyYHq0eOx,57dN52uHvrHOxijzpIgu3E,1vCWHaC5f2uS3yhpwWbIA6" // string | 
+    type_ := "artist" // string |
+    ids := "2CIMQHirSU0MQqyYHq0eOx,57dN52uHvrHOxijzpIgu3E,1vCWHaC5f2uS3yhpwWbIA6" // string |
     requestBody := map[string]interface{}{"key": interface{}(123)} // map[string]interface{} |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -695,9 +695,9 @@ Other parameters are passed through a pointer to a apiUnfollowArtistsUsersReques
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **type_** | **string** |  | 
- **ids** | **string** |  | 
- **requestBody** | **map[string]interface{}** |  | 
+ **type_** | **string** |  |
+ **ids** | **string** |  |
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 

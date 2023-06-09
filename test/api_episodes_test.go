@@ -11,10 +11,10 @@ package openapi
 
 import (
 	"context"
+	openapiclient "github.com/jcoelho93/spotigo"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
 )
 
 func Test_openapi_EpisodesApiService(t *testing.T) {
@@ -24,7 +24,7 @@ func Test_openapi_EpisodesApiService(t *testing.T) {
 
 	t.Run("Test EpisodesApiService CheckUsersSavedEpisodes", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.EpisodesApi.CheckUsersSavedEpisodes(context.Background()).Execute()
 
@@ -36,7 +36,7 @@ func Test_openapi_EpisodesApiService(t *testing.T) {
 
 	t.Run("Test EpisodesApiService GetAShowsEpisodes", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var id string
 
@@ -50,7 +50,7 @@ func Test_openapi_EpisodesApiService(t *testing.T) {
 
 	t.Run("Test EpisodesApiService GetAnEpisode", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var id string
 
@@ -64,7 +64,7 @@ func Test_openapi_EpisodesApiService(t *testing.T) {
 
 	t.Run("Test EpisodesApiService GetMultipleEpisodes", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.EpisodesApi.GetMultipleEpisodes(context.Background()).Execute()
 
@@ -76,7 +76,7 @@ func Test_openapi_EpisodesApiService(t *testing.T) {
 
 	t.Run("Test EpisodesApiService GetUsersSavedEpisodes", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.EpisodesApi.GetUsersSavedEpisodes(context.Background()).Execute()
 
@@ -88,7 +88,7 @@ func Test_openapi_EpisodesApiService(t *testing.T) {
 
 	t.Run("Test EpisodesApiService RemoveEpisodesUser", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.EpisodesApi.RemoveEpisodesUser(context.Background()).Execute()
 
@@ -99,7 +99,7 @@ func Test_openapi_EpisodesApiService(t *testing.T) {
 
 	t.Run("Test EpisodesApiService SaveEpisodesUser", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.EpisodesApi.SaveEpisodesUser(context.Background()).Execute()
 
