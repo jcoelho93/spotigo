@@ -4,7 +4,7 @@ All URIs are relative to *https://api.spotify.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**Search**](SearchApi.md#Search) | **Get** /search | Search for Item 
+[**Search**](SearchApi.md#Search) | **Get** /search | Search for Item
 
 
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 > Search200Response Search(ctx).Q(q).Type_(type_).Market(market).Limit(limit).Offset(offset).IncludeExternal(includeExternal).Execute()
 
-Search for Item 
+Search for Item
 
 
 
@@ -25,12 +25,12 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    q := "remaster%20track:Doxy%20artist:Miles%20Davis" // string | 
-    type_ := []string{"Type_example"} // []string | 
+    q := "remaster%20track:Doxy%20artist:Miles%20Davis" // string |
+    type_ := []string{"Type_example"} // []string |
     market := "ES" // string |  (optional)
     limit := int32(10) // int32 |  (optional) (default to 20)
     offset := int32(5) // int32 |  (optional) (default to 0)
@@ -59,12 +59,12 @@ Other parameters are passed through a pointer to a apiSearchRequest struct via t
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **q** | **string** |  | 
- **type_** | **[]string** |  | 
- **market** | **string** |  | 
+ **q** | **string** |  |
+ **type_** | **[]string** |  |
+ **market** | **string** |  |
  **limit** | **int32** |  | [default to 20]
  **offset** | **int32** |  | [default to 0]
- **includeExternal** | **string** |  | 
+ **includeExternal** | **string** |  |
 
 ### Return type
 

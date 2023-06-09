@@ -4,13 +4,13 @@ All URIs are relative to *https://api.spotify.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CheckUsersSavedAudiobooks**](AudiobooksApi.md#CheckUsersSavedAudiobooks) | **Get** /me/audiobooks/contains | Check User&#39;s Saved Audiobooks 
-[**GetAnAudiobook**](AudiobooksApi.md#GetAnAudiobook) | **Get** /audiobooks/{id} | Get an Audiobook 
-[**GetAudiobookChapters**](AudiobooksApi.md#GetAudiobookChapters) | **Get** /audiobooks/{id}/chapters | Get Audiobook Chapters 
-[**GetMultipleAudiobooks**](AudiobooksApi.md#GetMultipleAudiobooks) | **Get** /audiobooks | Get Several Audiobooks 
-[**GetUsersSavedAudiobooks**](AudiobooksApi.md#GetUsersSavedAudiobooks) | **Get** /me/audiobooks | Get User&#39;s Saved Audiobooks 
-[**RemoveAudiobooksUser**](AudiobooksApi.md#RemoveAudiobooksUser) | **Delete** /me/audiobooks | Remove User&#39;s Saved Audiobooks 
-[**SaveAudiobooksUser**](AudiobooksApi.md#SaveAudiobooksUser) | **Put** /me/audiobooks | Save Audiobooks for Current User 
+[**CheckUsersSavedAudiobooks**](AudiobooksApi.md#CheckUsersSavedAudiobooks) | **Get** /me/audiobooks/contains | Check User&#39;s Saved Audiobooks
+[**GetAnAudiobook**](AudiobooksApi.md#GetAnAudiobook) | **Get** /audiobooks/{id} | Get an Audiobook
+[**GetAudiobookChapters**](AudiobooksApi.md#GetAudiobookChapters) | **Get** /audiobooks/{id}/chapters | Get Audiobook Chapters
+[**GetMultipleAudiobooks**](AudiobooksApi.md#GetMultipleAudiobooks) | **Get** /audiobooks | Get Several Audiobooks
+[**GetUsersSavedAudiobooks**](AudiobooksApi.md#GetUsersSavedAudiobooks) | **Get** /me/audiobooks | Get User&#39;s Saved Audiobooks
+[**RemoveAudiobooksUser**](AudiobooksApi.md#RemoveAudiobooksUser) | **Delete** /me/audiobooks | Remove User&#39;s Saved Audiobooks
+[**SaveAudiobooksUser**](AudiobooksApi.md#SaveAudiobooksUser) | **Put** /me/audiobooks | Save Audiobooks for Current User
 
 
 
@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 > []bool CheckUsersSavedAudiobooks(ctx).Ids(ids).Execute()
 
-Check User's Saved Audiobooks 
+Check User's Saved Audiobooks
 
 
 
@@ -31,11 +31,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "18yVqkdbdRvS24c0Ilj2ci,1HGw3J3NxZO1TP1BTtVhpZ,7iHfbu1YPACw6oZPAFJtqe" // string | 
+    ids := "18yVqkdbdRvS24c0Ilj2ci,1HGw3J3NxZO1TP1BTtVhpZ,7iHfbu1YPACw6oZPAFJtqe" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -60,7 +60,7 @@ Other parameters are passed through a pointer to a apiCheckUsersSavedAudiobooksR
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
+ **ids** | **string** |  |
 
 ### Return type
 
@@ -84,7 +84,7 @@ Name | Type | Description  | Notes
 
 > AudiobookObject GetAnAudiobook(ctx, id).Market(market).Execute()
 
-Get an Audiobook 
+Get an Audiobook
 
 
 
@@ -97,11 +97,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    id := "7iHfbu1YPACw6oZPAFJtqe" // string | 
+    id := "7iHfbu1YPACw6oZPAFJtqe" // string |
     market := "ES" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -122,7 +122,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** |  | 
+**id** | **string** |  |
 
 ### Other Parameters
 
@@ -132,7 +132,7 @@ Other parameters are passed through a pointer to a apiGetAnAudiobookRequest stru
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **market** | **string** |  | 
+ **market** | **string** |  |
 
 ### Return type
 
@@ -156,7 +156,7 @@ Name | Type | Description  | Notes
 
 > PagingSimplifiedChapterObject GetAudiobookChapters(ctx, id).Market(market).Limit(limit).Offset(offset).Execute()
 
-Get Audiobook Chapters 
+Get Audiobook Chapters
 
 
 
@@ -169,11 +169,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    id := "7iHfbu1YPACw6oZPAFJtqe" // string | 
+    id := "7iHfbu1YPACw6oZPAFJtqe" // string |
     market := "ES" // string |  (optional)
     limit := int32(10) // int32 |  (optional) (default to 20)
     offset := int32(5) // int32 |  (optional) (default to 0)
@@ -196,7 +196,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** |  | 
+**id** | **string** |  |
 
 ### Other Parameters
 
@@ -206,7 +206,7 @@ Other parameters are passed through a pointer to a apiGetAudiobookChaptersReques
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **market** | **string** |  | 
+ **market** | **string** |  |
  **limit** | **int32** |  | [default to 20]
  **offset** | **int32** |  | [default to 0]
 
@@ -232,7 +232,7 @@ Name | Type | Description  | Notes
 
 > GetMultipleAudiobooks200Response GetMultipleAudiobooks(ctx).Ids(ids).Market(market).Execute()
 
-Get Several Audiobooks 
+Get Several Audiobooks
 
 
 
@@ -245,11 +245,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "18yVqkdbdRvS24c0Ilj2ci,1HGw3J3NxZO1TP1BTtVhpZ,7iHfbu1YPACw6oZPAFJtqe" // string | 
+    ids := "18yVqkdbdRvS24c0Ilj2ci,1HGw3J3NxZO1TP1BTtVhpZ,7iHfbu1YPACw6oZPAFJtqe" // string |
     market := "ES" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -275,8 +275,8 @@ Other parameters are passed through a pointer to a apiGetMultipleAudiobooksReque
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
- **market** | **string** |  | 
+ **ids** | **string** |  |
+ **market** | **string** |  |
 
 ### Return type
 
@@ -300,7 +300,7 @@ Name | Type | Description  | Notes
 
 > PagingSavedAudiobookObject GetUsersSavedAudiobooks(ctx).Limit(limit).Offset(offset).Execute()
 
-Get User's Saved Audiobooks 
+Get User's Saved Audiobooks
 
 
 
@@ -313,7 +313,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
@@ -368,7 +368,7 @@ Name | Type | Description  | Notes
 
 > RemoveAudiobooksUser(ctx).Ids(ids).Execute()
 
-Remove User's Saved Audiobooks 
+Remove User's Saved Audiobooks
 
 
 
@@ -381,11 +381,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "18yVqkdbdRvS24c0Ilj2ci,1HGw3J3NxZO1TP1BTtVhpZ,7iHfbu1YPACw6oZPAFJtqe" // string | 
+    ids := "18yVqkdbdRvS24c0Ilj2ci,1HGw3J3NxZO1TP1BTtVhpZ,7iHfbu1YPACw6oZPAFJtqe" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -408,7 +408,7 @@ Other parameters are passed through a pointer to a apiRemoveAudiobooksUserReques
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
+ **ids** | **string** |  |
 
 ### Return type
 
@@ -432,7 +432,7 @@ Name | Type | Description  | Notes
 
 > SaveAudiobooksUser(ctx).Ids(ids).Execute()
 
-Save Audiobooks for Current User 
+Save Audiobooks for Current User
 
 
 
@@ -445,11 +445,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "18yVqkdbdRvS24c0Ilj2ci,1HGw3J3NxZO1TP1BTtVhpZ,7iHfbu1YPACw6oZPAFJtqe" // string | 
+    ids := "18yVqkdbdRvS24c0Ilj2ci,1HGw3J3NxZO1TP1BTtVhpZ,7iHfbu1YPACw6oZPAFJtqe" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -472,7 +472,7 @@ Other parameters are passed through a pointer to a apiSaveAudiobooksUserRequest 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
+ **ids** | **string** |  |
 
 ### Return type
 

@@ -11,10 +11,11 @@ package openapi
 
 import (
 	"context"
+	"testing"
+
+	openapiclient "github.com/jcoelho93/jcoelho93"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
 )
 
 func Test_openapi_TracksApiService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_openapi_TracksApiService(t *testing.T) {
 
 	t.Run("Test TracksApiService AddTracksToPlaylist", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var playlistId string
 
@@ -38,7 +39,7 @@ func Test_openapi_TracksApiService(t *testing.T) {
 
 	t.Run("Test TracksApiService CheckUsersSavedTracks", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.TracksApi.CheckUsersSavedTracks(context.Background()).Execute()
 
@@ -50,7 +51,7 @@ func Test_openapi_TracksApiService(t *testing.T) {
 
 	t.Run("Test TracksApiService GetAnAlbumsTracks", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var id string
 
@@ -64,7 +65,7 @@ func Test_openapi_TracksApiService(t *testing.T) {
 
 	t.Run("Test TracksApiService GetAnArtistsTopTracks", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var id string
 
@@ -78,7 +79,7 @@ func Test_openapi_TracksApiService(t *testing.T) {
 
 	t.Run("Test TracksApiService GetAudioAnalysis", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var id string
 
@@ -92,7 +93,7 @@ func Test_openapi_TracksApiService(t *testing.T) {
 
 	t.Run("Test TracksApiService GetAudioFeatures", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var id string
 
@@ -106,7 +107,7 @@ func Test_openapi_TracksApiService(t *testing.T) {
 
 	t.Run("Test TracksApiService GetPlaylistsTracks", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var playlistId string
 
@@ -120,7 +121,7 @@ func Test_openapi_TracksApiService(t *testing.T) {
 
 	t.Run("Test TracksApiService GetRecommendations", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.TracksApi.GetRecommendations(context.Background()).Execute()
 
@@ -132,7 +133,7 @@ func Test_openapi_TracksApiService(t *testing.T) {
 
 	t.Run("Test TracksApiService GetSeveralAudioFeatures", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.TracksApi.GetSeveralAudioFeatures(context.Background()).Execute()
 
@@ -144,7 +145,7 @@ func Test_openapi_TracksApiService(t *testing.T) {
 
 	t.Run("Test TracksApiService GetSeveralTracks", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.TracksApi.GetSeveralTracks(context.Background()).Execute()
 
@@ -156,7 +157,7 @@ func Test_openapi_TracksApiService(t *testing.T) {
 
 	t.Run("Test TracksApiService GetTrack", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var id string
 
@@ -170,7 +171,7 @@ func Test_openapi_TracksApiService(t *testing.T) {
 
 	t.Run("Test TracksApiService GetUsersSavedTracks", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.TracksApi.GetUsersSavedTracks(context.Background()).Execute()
 
@@ -182,7 +183,7 @@ func Test_openapi_TracksApiService(t *testing.T) {
 
 	t.Run("Test TracksApiService GetUsersTopTracks", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.TracksApi.GetUsersTopTracks(context.Background()).Execute()
 
@@ -194,7 +195,7 @@ func Test_openapi_TracksApiService(t *testing.T) {
 
 	t.Run("Test TracksApiService RemoveTracksPlaylist", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var playlistId string
 
@@ -208,7 +209,7 @@ func Test_openapi_TracksApiService(t *testing.T) {
 
 	t.Run("Test TracksApiService RemoveTracksUser", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.TracksApi.RemoveTracksUser(context.Background()).Execute()
 
@@ -219,7 +220,7 @@ func Test_openapi_TracksApiService(t *testing.T) {
 
 	t.Run("Test TracksApiService ReorderOrReplacePlaylistsTracks", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var playlistId string
 
@@ -233,7 +234,7 @@ func Test_openapi_TracksApiService(t *testing.T) {
 
 	t.Run("Test TracksApiService SaveTracksUser", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.TracksApi.SaveTracksUser(context.Background()).Execute()
 

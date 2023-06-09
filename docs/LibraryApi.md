@@ -4,35 +4,35 @@ All URIs are relative to *https://api.spotify.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ChangePlaylistDetails**](LibraryApi.md#ChangePlaylistDetails) | **Put** /playlists/{playlist_id} | Change Playlist Details 
-[**CheckCurrentUserFollows**](LibraryApi.md#CheckCurrentUserFollows) | **Get** /me/following/contains | Check If User Follows Artists or Users 
-[**CheckUsersSavedAlbums**](LibraryApi.md#CheckUsersSavedAlbums) | **Get** /me/albums/contains | Check User&#39;s Saved Albums 
-[**CheckUsersSavedAudiobooks**](LibraryApi.md#CheckUsersSavedAudiobooks) | **Get** /me/audiobooks/contains | Check User&#39;s Saved Audiobooks 
-[**CheckUsersSavedEpisodes**](LibraryApi.md#CheckUsersSavedEpisodes) | **Get** /me/episodes/contains | Check User&#39;s Saved Episodes 
-[**CheckUsersSavedShows**](LibraryApi.md#CheckUsersSavedShows) | **Get** /me/shows/contains | Check User&#39;s Saved Shows 
-[**CheckUsersSavedTracks**](LibraryApi.md#CheckUsersSavedTracks) | **Get** /me/tracks/contains | Check User&#39;s Saved Tracks 
-[**CreatePlaylist**](LibraryApi.md#CreatePlaylist) | **Post** /users/{user_id}/playlists | Create Playlist 
-[**FollowArtistsUsers**](LibraryApi.md#FollowArtistsUsers) | **Put** /me/following | Follow Artists or Users 
-[**GetAListOfCurrentUsersPlaylists**](LibraryApi.md#GetAListOfCurrentUsersPlaylists) | **Get** /me/playlists | Get Current User&#39;s Playlists 
-[**GetFollowed**](LibraryApi.md#GetFollowed) | **Get** /me/following | Get Followed Artists 
-[**GetUsersSavedAlbums**](LibraryApi.md#GetUsersSavedAlbums) | **Get** /me/albums | Get User&#39;s Saved Albums 
-[**GetUsersSavedAudiobooks**](LibraryApi.md#GetUsersSavedAudiobooks) | **Get** /me/audiobooks | Get User&#39;s Saved Audiobooks 
-[**GetUsersSavedEpisodes**](LibraryApi.md#GetUsersSavedEpisodes) | **Get** /me/episodes | Get User&#39;s Saved Episodes 
-[**GetUsersSavedShows**](LibraryApi.md#GetUsersSavedShows) | **Get** /me/shows | Get User&#39;s Saved Shows 
-[**GetUsersSavedTracks**](LibraryApi.md#GetUsersSavedTracks) | **Get** /me/tracks | Get User&#39;s Saved Tracks 
-[**GetUsersTopArtists**](LibraryApi.md#GetUsersTopArtists) | **Get** /me/top/artists | Get User&#39;s Top Artists 
-[**GetUsersTopTracks**](LibraryApi.md#GetUsersTopTracks) | **Get** /me/top/tracks | Get User&#39;s Top Tracks 
-[**RemoveAlbumsUser**](LibraryApi.md#RemoveAlbumsUser) | **Delete** /me/albums | Remove Users&#39; Saved Albums 
-[**RemoveAudiobooksUser**](LibraryApi.md#RemoveAudiobooksUser) | **Delete** /me/audiobooks | Remove User&#39;s Saved Audiobooks 
-[**RemoveEpisodesUser**](LibraryApi.md#RemoveEpisodesUser) | **Delete** /me/episodes | Remove User&#39;s Saved Episodes 
-[**RemoveShowsUser**](LibraryApi.md#RemoveShowsUser) | **Delete** /me/shows | Remove User&#39;s Saved Shows 
-[**RemoveTracksUser**](LibraryApi.md#RemoveTracksUser) | **Delete** /me/tracks | Remove User&#39;s Saved Tracks 
-[**SaveAlbumsUser**](LibraryApi.md#SaveAlbumsUser) | **Put** /me/albums | Save Albums for Current User 
-[**SaveAudiobooksUser**](LibraryApi.md#SaveAudiobooksUser) | **Put** /me/audiobooks | Save Audiobooks for Current User 
-[**SaveEpisodesUser**](LibraryApi.md#SaveEpisodesUser) | **Put** /me/episodes | Save Episodes for Current User 
-[**SaveShowsUser**](LibraryApi.md#SaveShowsUser) | **Put** /me/shows | Save Shows for Current User 
-[**SaveTracksUser**](LibraryApi.md#SaveTracksUser) | **Put** /me/tracks | Save Tracks for Current User 
-[**UnfollowArtistsUsers**](LibraryApi.md#UnfollowArtistsUsers) | **Delete** /me/following | Unfollow Artists or Users 
+[**ChangePlaylistDetails**](LibraryApi.md#ChangePlaylistDetails) | **Put** /playlists/{playlist_id} | Change Playlist Details
+[**CheckCurrentUserFollows**](LibraryApi.md#CheckCurrentUserFollows) | **Get** /me/following/contains | Check If User Follows Artists or Users
+[**CheckUsersSavedAlbums**](LibraryApi.md#CheckUsersSavedAlbums) | **Get** /me/albums/contains | Check User&#39;s Saved Albums
+[**CheckUsersSavedAudiobooks**](LibraryApi.md#CheckUsersSavedAudiobooks) | **Get** /me/audiobooks/contains | Check User&#39;s Saved Audiobooks
+[**CheckUsersSavedEpisodes**](LibraryApi.md#CheckUsersSavedEpisodes) | **Get** /me/episodes/contains | Check User&#39;s Saved Episodes
+[**CheckUsersSavedShows**](LibraryApi.md#CheckUsersSavedShows) | **Get** /me/shows/contains | Check User&#39;s Saved Shows
+[**CheckUsersSavedTracks**](LibraryApi.md#CheckUsersSavedTracks) | **Get** /me/tracks/contains | Check User&#39;s Saved Tracks
+[**CreatePlaylist**](LibraryApi.md#CreatePlaylist) | **Post** /users/{user_id}/playlists | Create Playlist
+[**FollowArtistsUsers**](LibraryApi.md#FollowArtistsUsers) | **Put** /me/following | Follow Artists or Users
+[**GetAListOfCurrentUsersPlaylists**](LibraryApi.md#GetAListOfCurrentUsersPlaylists) | **Get** /me/playlists | Get Current User&#39;s Playlists
+[**GetFollowed**](LibraryApi.md#GetFollowed) | **Get** /me/following | Get Followed Artists
+[**GetUsersSavedAlbums**](LibraryApi.md#GetUsersSavedAlbums) | **Get** /me/albums | Get User&#39;s Saved Albums
+[**GetUsersSavedAudiobooks**](LibraryApi.md#GetUsersSavedAudiobooks) | **Get** /me/audiobooks | Get User&#39;s Saved Audiobooks
+[**GetUsersSavedEpisodes**](LibraryApi.md#GetUsersSavedEpisodes) | **Get** /me/episodes | Get User&#39;s Saved Episodes
+[**GetUsersSavedShows**](LibraryApi.md#GetUsersSavedShows) | **Get** /me/shows | Get User&#39;s Saved Shows
+[**GetUsersSavedTracks**](LibraryApi.md#GetUsersSavedTracks) | **Get** /me/tracks | Get User&#39;s Saved Tracks
+[**GetUsersTopArtists**](LibraryApi.md#GetUsersTopArtists) | **Get** /me/top/artists | Get User&#39;s Top Artists
+[**GetUsersTopTracks**](LibraryApi.md#GetUsersTopTracks) | **Get** /me/top/tracks | Get User&#39;s Top Tracks
+[**RemoveAlbumsUser**](LibraryApi.md#RemoveAlbumsUser) | **Delete** /me/albums | Remove Users&#39; Saved Albums
+[**RemoveAudiobooksUser**](LibraryApi.md#RemoveAudiobooksUser) | **Delete** /me/audiobooks | Remove User&#39;s Saved Audiobooks
+[**RemoveEpisodesUser**](LibraryApi.md#RemoveEpisodesUser) | **Delete** /me/episodes | Remove User&#39;s Saved Episodes
+[**RemoveShowsUser**](LibraryApi.md#RemoveShowsUser) | **Delete** /me/shows | Remove User&#39;s Saved Shows
+[**RemoveTracksUser**](LibraryApi.md#RemoveTracksUser) | **Delete** /me/tracks | Remove User&#39;s Saved Tracks
+[**SaveAlbumsUser**](LibraryApi.md#SaveAlbumsUser) | **Put** /me/albums | Save Albums for Current User
+[**SaveAudiobooksUser**](LibraryApi.md#SaveAudiobooksUser) | **Put** /me/audiobooks | Save Audiobooks for Current User
+[**SaveEpisodesUser**](LibraryApi.md#SaveEpisodesUser) | **Put** /me/episodes | Save Episodes for Current User
+[**SaveShowsUser**](LibraryApi.md#SaveShowsUser) | **Put** /me/shows | Save Shows for Current User
+[**SaveTracksUser**](LibraryApi.md#SaveTracksUser) | **Put** /me/tracks | Save Tracks for Current User
+[**UnfollowArtistsUsers**](LibraryApi.md#UnfollowArtistsUsers) | **Delete** /me/following | Unfollow Artists or Users
 
 
 
@@ -40,7 +40,7 @@ Method | HTTP request | Description
 
 > ChangePlaylistDetails(ctx, playlistId).RequestBody(requestBody).Execute()
 
-Change Playlist Details 
+Change Playlist Details
 
 
 
@@ -53,11 +53,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string | 
+    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string |
     requestBody := map[string]interface{}{"key": interface{}(123)} // map[string]interface{} |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -76,7 +76,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**playlistId** | **string** |  | 
+**playlistId** | **string** |  |
 
 ### Other Parameters
 
@@ -86,7 +86,7 @@ Other parameters are passed through a pointer to a apiChangePlaylistDetailsReque
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **requestBody** | **map[string]interface{}** |  | 
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 
@@ -110,7 +110,7 @@ Name | Type | Description  | Notes
 
 > []bool CheckCurrentUserFollows(ctx).Type_(type_).Ids(ids).Execute()
 
-Check If User Follows Artists or Users 
+Check If User Follows Artists or Users
 
 
 
@@ -123,12 +123,12 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    type_ := "artist" // string | 
-    ids := "2CIMQHirSU0MQqyYHq0eOx,57dN52uHvrHOxijzpIgu3E,1vCWHaC5f2uS3yhpwWbIA6" // string | 
+    type_ := "artist" // string |
+    ids := "2CIMQHirSU0MQqyYHq0eOx,57dN52uHvrHOxijzpIgu3E,1vCWHaC5f2uS3yhpwWbIA6" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -153,8 +153,8 @@ Other parameters are passed through a pointer to a apiCheckCurrentUserFollowsReq
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **type_** | **string** |  | 
- **ids** | **string** |  | 
+ **type_** | **string** |  |
+ **ids** | **string** |  |
 
 ### Return type
 
@@ -178,7 +178,7 @@ Name | Type | Description  | Notes
 
 > []bool CheckUsersSavedAlbums(ctx).Ids(ids).Execute()
 
-Check User's Saved Albums 
+Check User's Saved Albums
 
 
 
@@ -191,11 +191,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "382ObEPsp2rxGrnsizN5TX,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWThc" // string | 
+    ids := "382ObEPsp2rxGrnsizN5TX,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWThc" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -220,7 +220,7 @@ Other parameters are passed through a pointer to a apiCheckUsersSavedAlbumsReque
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
+ **ids** | **string** |  |
 
 ### Return type
 
@@ -244,7 +244,7 @@ Name | Type | Description  | Notes
 
 > []bool CheckUsersSavedAudiobooks(ctx).Ids(ids).Execute()
 
-Check User's Saved Audiobooks 
+Check User's Saved Audiobooks
 
 
 
@@ -257,11 +257,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "18yVqkdbdRvS24c0Ilj2ci,1HGw3J3NxZO1TP1BTtVhpZ,7iHfbu1YPACw6oZPAFJtqe" // string | 
+    ids := "18yVqkdbdRvS24c0Ilj2ci,1HGw3J3NxZO1TP1BTtVhpZ,7iHfbu1YPACw6oZPAFJtqe" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -286,7 +286,7 @@ Other parameters are passed through a pointer to a apiCheckUsersSavedAudiobooksR
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
+ **ids** | **string** |  |
 
 ### Return type
 
@@ -310,7 +310,7 @@ Name | Type | Description  | Notes
 
 > []bool CheckUsersSavedEpisodes(ctx).Ids(ids).Execute()
 
-Check User's Saved Episodes 
+Check User's Saved Episodes
 
 
 
@@ -323,11 +323,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "77o6BIVlYM3msb4MMIL1jH,0Q86acNRm6V9GYx55SXKwf" // string | 
+    ids := "77o6BIVlYM3msb4MMIL1jH,0Q86acNRm6V9GYx55SXKwf" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -352,7 +352,7 @@ Other parameters are passed through a pointer to a apiCheckUsersSavedEpisodesReq
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
+ **ids** | **string** |  |
 
 ### Return type
 
@@ -376,7 +376,7 @@ Name | Type | Description  | Notes
 
 > []bool CheckUsersSavedShows(ctx).Ids(ids).Execute()
 
-Check User's Saved Shows 
+Check User's Saved Shows
 
 
 
@@ -389,11 +389,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "5CfCWKI5pZ28U0uOzXkDHe,5as3aKmN2k11yfDDDSrvaZ" // string | 
+    ids := "5CfCWKI5pZ28U0uOzXkDHe,5as3aKmN2k11yfDDDSrvaZ" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -418,7 +418,7 @@ Other parameters are passed through a pointer to a apiCheckUsersSavedShowsReques
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
+ **ids** | **string** |  |
 
 ### Return type
 
@@ -442,7 +442,7 @@ Name | Type | Description  | Notes
 
 > []bool CheckUsersSavedTracks(ctx).Ids(ids).Execute()
 
-Check User's Saved Tracks 
+Check User's Saved Tracks
 
 
 
@@ -455,11 +455,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "7ouMYWpwJ422jRcDASZB7P,4VqPOruhp5EdPBeR92t6lQ,2takcwOaAZWiXQijPHIx7B" // string | 
+    ids := "7ouMYWpwJ422jRcDASZB7P,4VqPOruhp5EdPBeR92t6lQ,2takcwOaAZWiXQijPHIx7B" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -484,7 +484,7 @@ Other parameters are passed through a pointer to a apiCheckUsersSavedTracksReque
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
+ **ids** | **string** |  |
 
 ### Return type
 
@@ -508,7 +508,7 @@ Name | Type | Description  | Notes
 
 > PlaylistObject CreatePlaylist(ctx, userId).RequestBody(requestBody).Execute()
 
-Create Playlist 
+Create Playlist
 
 
 
@@ -521,11 +521,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    userId := "smedjan" // string | 
+    userId := "smedjan" // string |
     requestBody := map[string]interface{}{"key": interface{}(123)} // map[string]interface{} |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -546,7 +546,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**userId** | **string** |  | 
+**userId** | **string** |  |
 
 ### Other Parameters
 
@@ -556,7 +556,7 @@ Other parameters are passed through a pointer to a apiCreatePlaylistRequest stru
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **requestBody** | **map[string]interface{}** |  | 
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 
@@ -580,7 +580,7 @@ Name | Type | Description  | Notes
 
 > FollowArtistsUsers(ctx).Type_(type_).Ids(ids).RequestBody(requestBody).Execute()
 
-Follow Artists or Users 
+Follow Artists or Users
 
 
 
@@ -593,12 +593,12 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    type_ := "artist" // string | 
-    ids := "2CIMQHirSU0MQqyYHq0eOx,57dN52uHvrHOxijzpIgu3E,1vCWHaC5f2uS3yhpwWbIA6" // string | 
+    type_ := "artist" // string |
+    ids := "2CIMQHirSU0MQqyYHq0eOx,57dN52uHvrHOxijzpIgu3E,1vCWHaC5f2uS3yhpwWbIA6" // string |
     requestBody := map[string]interface{}{"key": interface{}(123)} // map[string]interface{} |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -622,9 +622,9 @@ Other parameters are passed through a pointer to a apiFollowArtistsUsersRequest 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **type_** | **string** |  | 
- **ids** | **string** |  | 
- **requestBody** | **map[string]interface{}** |  | 
+ **type_** | **string** |  |
+ **ids** | **string** |  |
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 
@@ -648,7 +648,7 @@ Name | Type | Description  | Notes
 
 > PagingPlaylistObject GetAListOfCurrentUsersPlaylists(ctx).Limit(limit).Offset(offset).Execute()
 
-Get Current User's Playlists 
+Get Current User's Playlists
 
 
 
@@ -661,7 +661,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
@@ -716,7 +716,7 @@ Name | Type | Description  | Notes
 
 > GetFollowed200Response GetFollowed(ctx).Type_(type_).After(after).Limit(limit).Execute()
 
-Get Followed Artists 
+Get Followed Artists
 
 
 
@@ -729,11 +729,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    type_ := "artist" // string | 
+    type_ := "artist" // string |
     after := "0I2XqVXqHScXjHhk6AYYRe" // string |  (optional)
     limit := int32(10) // int32 |  (optional) (default to 20)
 
@@ -760,8 +760,8 @@ Other parameters are passed through a pointer to a apiGetFollowedRequest struct 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **type_** | **string** |  | 
- **after** | **string** |  | 
+ **type_** | **string** |  |
+ **after** | **string** |  |
  **limit** | **int32** |  | [default to 20]
 
 ### Return type
@@ -786,7 +786,7 @@ Name | Type | Description  | Notes
 
 > PagingSavedAlbumObject GetUsersSavedAlbums(ctx).Limit(limit).Offset(offset).Market(market).Execute()
 
-Get User's Saved Albums 
+Get User's Saved Albums
 
 
 
@@ -799,7 +799,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
@@ -832,7 +832,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **limit** | **int32** |  | [default to 20]
  **offset** | **int32** |  | [default to 0]
- **market** | **string** |  | 
+ **market** | **string** |  |
 
 ### Return type
 
@@ -856,7 +856,7 @@ Name | Type | Description  | Notes
 
 > PagingSavedAudiobookObject GetUsersSavedAudiobooks(ctx).Limit(limit).Offset(offset).Execute()
 
-Get User's Saved Audiobooks 
+Get User's Saved Audiobooks
 
 
 
@@ -869,7 +869,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
@@ -924,7 +924,7 @@ Name | Type | Description  | Notes
 
 > PagingSavedEpisodeObject GetUsersSavedEpisodes(ctx).Market(market).Limit(limit).Offset(offset).Execute()
 
-Get User's Saved Episodes 
+Get User's Saved Episodes
 
 
 
@@ -937,7 +937,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
@@ -968,7 +968,7 @@ Other parameters are passed through a pointer to a apiGetUsersSavedEpisodesReque
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **market** | **string** |  | 
+ **market** | **string** |  |
  **limit** | **int32** |  | [default to 20]
  **offset** | **int32** |  | [default to 0]
 
@@ -994,7 +994,7 @@ Name | Type | Description  | Notes
 
 > PagingSavedShowObject GetUsersSavedShows(ctx).Limit(limit).Offset(offset).Execute()
 
-Get User's Saved Shows 
+Get User's Saved Shows
 
 
 
@@ -1007,7 +1007,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
@@ -1062,7 +1062,7 @@ Name | Type | Description  | Notes
 
 > PagingSavedTrackObject GetUsersSavedTracks(ctx).Market(market).Limit(limit).Offset(offset).Execute()
 
-Get User's Saved Tracks 
+Get User's Saved Tracks
 
 
 
@@ -1075,7 +1075,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
@@ -1106,7 +1106,7 @@ Other parameters are passed through a pointer to a apiGetUsersSavedTracksRequest
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **market** | **string** |  | 
+ **market** | **string** |  |
  **limit** | **int32** |  | [default to 20]
  **offset** | **int32** |  | [default to 0]
 
@@ -1132,7 +1132,7 @@ Name | Type | Description  | Notes
 
 > PagingArtistObject GetUsersTopArtists(ctx).TimeRange(timeRange).Limit(limit).Offset(offset).Execute()
 
-Get User's Top Artists 
+Get User's Top Artists
 
 
 
@@ -1145,7 +1145,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
@@ -1202,7 +1202,7 @@ Name | Type | Description  | Notes
 
 > PagingTrackObject GetUsersTopTracks(ctx).TimeRange(timeRange).Limit(limit).Offset(offset).Execute()
 
-Get User's Top Tracks 
+Get User's Top Tracks
 
 
 
@@ -1215,7 +1215,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
@@ -1272,7 +1272,7 @@ Name | Type | Description  | Notes
 
 > RemoveAlbumsUser(ctx).Ids(ids).RequestBody(requestBody).Execute()
 
-Remove Users' Saved Albums 
+Remove Users' Saved Albums
 
 
 
@@ -1285,11 +1285,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "382ObEPsp2rxGrnsizN5TX,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWThc" // string | 
+    ids := "382ObEPsp2rxGrnsizN5TX,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWThc" // string |
     requestBody := map[string]interface{}{"key": interface{}(123)} // map[string]interface{} |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -1313,8 +1313,8 @@ Other parameters are passed through a pointer to a apiRemoveAlbumsUserRequest st
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
- **requestBody** | **map[string]interface{}** |  | 
+ **ids** | **string** |  |
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 
@@ -1338,7 +1338,7 @@ Name | Type | Description  | Notes
 
 > RemoveAudiobooksUser(ctx).Ids(ids).Execute()
 
-Remove User's Saved Audiobooks 
+Remove User's Saved Audiobooks
 
 
 
@@ -1351,11 +1351,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "18yVqkdbdRvS24c0Ilj2ci,1HGw3J3NxZO1TP1BTtVhpZ,7iHfbu1YPACw6oZPAFJtqe" // string | 
+    ids := "18yVqkdbdRvS24c0Ilj2ci,1HGw3J3NxZO1TP1BTtVhpZ,7iHfbu1YPACw6oZPAFJtqe" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -1378,7 +1378,7 @@ Other parameters are passed through a pointer to a apiRemoveAudiobooksUserReques
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
+ **ids** | **string** |  |
 
 ### Return type
 
@@ -1402,7 +1402,7 @@ Name | Type | Description  | Notes
 
 > RemoveEpisodesUser(ctx).Ids(ids).RequestBody(requestBody).Execute()
 
-Remove User's Saved Episodes 
+Remove User's Saved Episodes
 
 
 
@@ -1415,11 +1415,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "7ouMYWpwJ422jRcDASZB7P,4VqPOruhp5EdPBeR92t6lQ,2takcwOaAZWiXQijPHIx7B" // string | 
+    ids := "7ouMYWpwJ422jRcDASZB7P,4VqPOruhp5EdPBeR92t6lQ,2takcwOaAZWiXQijPHIx7B" // string |
     requestBody := map[string]interface{}{"key": interface{}(123)} // map[string]interface{} |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -1443,8 +1443,8 @@ Other parameters are passed through a pointer to a apiRemoveEpisodesUserRequest 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
- **requestBody** | **map[string]interface{}** |  | 
+ **ids** | **string** |  |
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 
@@ -1468,7 +1468,7 @@ Name | Type | Description  | Notes
 
 > RemoveShowsUser(ctx).Ids(ids).Market(market).SaveShowsUserRequest(saveShowsUserRequest).Execute()
 
-Remove User's Saved Shows 
+Remove User's Saved Shows
 
 
 
@@ -1481,11 +1481,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "5CfCWKI5pZ28U0uOzXkDHe,5as3aKmN2k11yfDDDSrvaZ" // string | 
+    ids := "5CfCWKI5pZ28U0uOzXkDHe,5as3aKmN2k11yfDDDSrvaZ" // string |
     market := "ES" // string |  (optional)
     saveShowsUserRequest := *openapiclient.NewSaveShowsUserRequest() // SaveShowsUserRequest |  (optional)
 
@@ -1510,9 +1510,9 @@ Other parameters are passed through a pointer to a apiRemoveShowsUserRequest str
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
- **market** | **string** |  | 
- **saveShowsUserRequest** | [**SaveShowsUserRequest**](SaveShowsUserRequest.md) |  | 
+ **ids** | **string** |  |
+ **market** | **string** |  |
+ **saveShowsUserRequest** | [**SaveShowsUserRequest**](SaveShowsUserRequest.md) |  |
 
 ### Return type
 
@@ -1536,7 +1536,7 @@ Name | Type | Description  | Notes
 
 > RemoveTracksUser(ctx).Ids(ids).RequestBody(requestBody).Execute()
 
-Remove User's Saved Tracks 
+Remove User's Saved Tracks
 
 
 
@@ -1549,11 +1549,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "7ouMYWpwJ422jRcDASZB7P,4VqPOruhp5EdPBeR92t6lQ,2takcwOaAZWiXQijPHIx7B" // string | 
+    ids := "7ouMYWpwJ422jRcDASZB7P,4VqPOruhp5EdPBeR92t6lQ,2takcwOaAZWiXQijPHIx7B" // string |
     requestBody := map[string]interface{}{"key": interface{}(123)} // map[string]interface{} |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -1577,8 +1577,8 @@ Other parameters are passed through a pointer to a apiRemoveTracksUserRequest st
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
- **requestBody** | **map[string]interface{}** |  | 
+ **ids** | **string** |  |
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 
@@ -1602,7 +1602,7 @@ Name | Type | Description  | Notes
 
 > SaveAlbumsUser(ctx).Ids(ids).RequestBody(requestBody).Execute()
 
-Save Albums for Current User 
+Save Albums for Current User
 
 
 
@@ -1615,11 +1615,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "382ObEPsp2rxGrnsizN5TX,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWThc" // string | 
+    ids := "382ObEPsp2rxGrnsizN5TX,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWThc" // string |
     requestBody := map[string]interface{}{"key": interface{}(123)} // map[string]interface{} |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -1643,8 +1643,8 @@ Other parameters are passed through a pointer to a apiSaveAlbumsUserRequest stru
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
- **requestBody** | **map[string]interface{}** |  | 
+ **ids** | **string** |  |
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 
@@ -1668,7 +1668,7 @@ Name | Type | Description  | Notes
 
 > SaveAudiobooksUser(ctx).Ids(ids).Execute()
 
-Save Audiobooks for Current User 
+Save Audiobooks for Current User
 
 
 
@@ -1681,11 +1681,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "18yVqkdbdRvS24c0Ilj2ci,1HGw3J3NxZO1TP1BTtVhpZ,7iHfbu1YPACw6oZPAFJtqe" // string | 
+    ids := "18yVqkdbdRvS24c0Ilj2ci,1HGw3J3NxZO1TP1BTtVhpZ,7iHfbu1YPACw6oZPAFJtqe" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -1708,7 +1708,7 @@ Other parameters are passed through a pointer to a apiSaveAudiobooksUserRequest 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
+ **ids** | **string** |  |
 
 ### Return type
 
@@ -1732,7 +1732,7 @@ Name | Type | Description  | Notes
 
 > SaveEpisodesUser(ctx).Ids(ids).RequestBody(requestBody).Execute()
 
-Save Episodes for Current User 
+Save Episodes for Current User
 
 
 
@@ -1745,11 +1745,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "77o6BIVlYM3msb4MMIL1jH,0Q86acNRm6V9GYx55SXKwf" // string | 
+    ids := "77o6BIVlYM3msb4MMIL1jH,0Q86acNRm6V9GYx55SXKwf" // string |
     requestBody := map[string]interface{}{"key": interface{}(123)} // map[string]interface{} |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -1773,8 +1773,8 @@ Other parameters are passed through a pointer to a apiSaveEpisodesUserRequest st
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
- **requestBody** | **map[string]interface{}** |  | 
+ **ids** | **string** |  |
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 
@@ -1798,7 +1798,7 @@ Name | Type | Description  | Notes
 
 > SaveShowsUser(ctx).Ids(ids).SaveShowsUserRequest(saveShowsUserRequest).Execute()
 
-Save Shows for Current User 
+Save Shows for Current User
 
 
 
@@ -1811,11 +1811,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "5CfCWKI5pZ28U0uOzXkDHe,5as3aKmN2k11yfDDDSrvaZ" // string | 
+    ids := "5CfCWKI5pZ28U0uOzXkDHe,5as3aKmN2k11yfDDDSrvaZ" // string |
     saveShowsUserRequest := *openapiclient.NewSaveShowsUserRequest() // SaveShowsUserRequest |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -1839,8 +1839,8 @@ Other parameters are passed through a pointer to a apiSaveShowsUserRequest struc
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
- **saveShowsUserRequest** | [**SaveShowsUserRequest**](SaveShowsUserRequest.md) |  | 
+ **ids** | **string** |  |
+ **saveShowsUserRequest** | [**SaveShowsUserRequest**](SaveShowsUserRequest.md) |  |
 
 ### Return type
 
@@ -1864,7 +1864,7 @@ Name | Type | Description  | Notes
 
 > SaveTracksUser(ctx).Ids(ids).RequestBody(requestBody).Execute()
 
-Save Tracks for Current User 
+Save Tracks for Current User
 
 
 
@@ -1877,11 +1877,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "7ouMYWpwJ422jRcDASZB7P,4VqPOruhp5EdPBeR92t6lQ,2takcwOaAZWiXQijPHIx7B" // string | 
+    ids := "7ouMYWpwJ422jRcDASZB7P,4VqPOruhp5EdPBeR92t6lQ,2takcwOaAZWiXQijPHIx7B" // string |
     requestBody := map[string]interface{}{"key": interface{}(123)} // map[string]interface{} |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -1905,8 +1905,8 @@ Other parameters are passed through a pointer to a apiSaveTracksUserRequest stru
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
- **requestBody** | **map[string]interface{}** |  | 
+ **ids** | **string** |  |
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 
@@ -1930,7 +1930,7 @@ Name | Type | Description  | Notes
 
 > UnfollowArtistsUsers(ctx).Type_(type_).Ids(ids).RequestBody(requestBody).Execute()
 
-Unfollow Artists or Users 
+Unfollow Artists or Users
 
 
 
@@ -1943,12 +1943,12 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    type_ := "artist" // string | 
-    ids := "2CIMQHirSU0MQqyYHq0eOx,57dN52uHvrHOxijzpIgu3E,1vCWHaC5f2uS3yhpwWbIA6" // string | 
+    type_ := "artist" // string |
+    ids := "2CIMQHirSU0MQqyYHq0eOx,57dN52uHvrHOxijzpIgu3E,1vCWHaC5f2uS3yhpwWbIA6" // string |
     requestBody := map[string]interface{}{"key": interface{}(123)} // map[string]interface{} |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -1972,9 +1972,9 @@ Other parameters are passed through a pointer to a apiUnfollowArtistsUsersReques
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **type_** | **string** |  | 
- **ids** | **string** |  | 
- **requestBody** | **map[string]interface{}** |  | 
+ **type_** | **string** |  |
+ **ids** | **string** |  |
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 

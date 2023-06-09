@@ -4,7 +4,7 @@ All URIs are relative to *https://api.spotify.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GetRecommendationGenres**](GenresApi.md#GetRecommendationGenres) | **Get** /recommendations/available-genre-seeds | Get Available Genre Seeds 
+[**GetRecommendationGenres**](GenresApi.md#GetRecommendationGenres) | **Get** /recommendations/available-genre-seeds | Get Available Genre Seeds
 
 
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 > GetRecommendationGenres200Response GetRecommendationGenres(ctx).Execute()
 
-Get Available Genre Seeds 
+Get Available Genre Seeds
 
 
 
@@ -25,7 +25,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {

@@ -4,15 +4,15 @@ All URIs are relative to *https://api.spotify.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CheckUsersSavedAlbums**](AlbumsApi.md#CheckUsersSavedAlbums) | **Get** /me/albums/contains | Check User&#39;s Saved Albums 
-[**GetAnAlbum**](AlbumsApi.md#GetAnAlbum) | **Get** /albums/{id} | Get Album 
-[**GetAnAlbumsTracks**](AlbumsApi.md#GetAnAlbumsTracks) | **Get** /albums/{id}/tracks | Get Album Tracks 
-[**GetAnArtistsAlbums**](AlbumsApi.md#GetAnArtistsAlbums) | **Get** /artists/{id}/albums | Get Artist&#39;s Albums 
-[**GetMultipleAlbums**](AlbumsApi.md#GetMultipleAlbums) | **Get** /albums | Get Several Albums 
-[**GetNewReleases**](AlbumsApi.md#GetNewReleases) | **Get** /browse/new-releases | Get New Releases 
-[**GetUsersSavedAlbums**](AlbumsApi.md#GetUsersSavedAlbums) | **Get** /me/albums | Get User&#39;s Saved Albums 
-[**RemoveAlbumsUser**](AlbumsApi.md#RemoveAlbumsUser) | **Delete** /me/albums | Remove Users&#39; Saved Albums 
-[**SaveAlbumsUser**](AlbumsApi.md#SaveAlbumsUser) | **Put** /me/albums | Save Albums for Current User 
+[**CheckUsersSavedAlbums**](AlbumsApi.md#CheckUsersSavedAlbums) | **Get** /me/albums/contains | Check User&#39;s Saved Albums
+[**GetAnAlbum**](AlbumsApi.md#GetAnAlbum) | **Get** /albums/{id} | Get Album
+[**GetAnAlbumsTracks**](AlbumsApi.md#GetAnAlbumsTracks) | **Get** /albums/{id}/tracks | Get Album Tracks
+[**GetAnArtistsAlbums**](AlbumsApi.md#GetAnArtistsAlbums) | **Get** /artists/{id}/albums | Get Artist&#39;s Albums
+[**GetMultipleAlbums**](AlbumsApi.md#GetMultipleAlbums) | **Get** /albums | Get Several Albums
+[**GetNewReleases**](AlbumsApi.md#GetNewReleases) | **Get** /browse/new-releases | Get New Releases
+[**GetUsersSavedAlbums**](AlbumsApi.md#GetUsersSavedAlbums) | **Get** /me/albums | Get User&#39;s Saved Albums
+[**RemoveAlbumsUser**](AlbumsApi.md#RemoveAlbumsUser) | **Delete** /me/albums | Remove Users&#39; Saved Albums
+[**SaveAlbumsUser**](AlbumsApi.md#SaveAlbumsUser) | **Put** /me/albums | Save Albums for Current User
 
 
 
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 > []bool CheckUsersSavedAlbums(ctx).Ids(ids).Execute()
 
-Check User's Saved Albums 
+Check User's Saved Albums
 
 
 
@@ -33,11 +33,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "382ObEPsp2rxGrnsizN5TX,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWThc" // string | 
+    ids := "382ObEPsp2rxGrnsizN5TX,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWThc" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -62,7 +62,7 @@ Other parameters are passed through a pointer to a apiCheckUsersSavedAlbumsReque
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
+ **ids** | **string** |  |
 
 ### Return type
 
@@ -86,7 +86,7 @@ Name | Type | Description  | Notes
 
 > AlbumObject GetAnAlbum(ctx, id).Market(market).Execute()
 
-Get Album 
+Get Album
 
 
 
@@ -99,11 +99,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    id := "4aawyAB9vmqN3uQ7FjRGTy" // string | 
+    id := "4aawyAB9vmqN3uQ7FjRGTy" // string |
     market := "ES" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -124,7 +124,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** |  | 
+**id** | **string** |  |
 
 ### Other Parameters
 
@@ -134,7 +134,7 @@ Other parameters are passed through a pointer to a apiGetAnAlbumRequest struct v
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **market** | **string** |  | 
+ **market** | **string** |  |
 
 ### Return type
 
@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 
 > PagingSimplifiedTrackObject GetAnAlbumsTracks(ctx, id).Market(market).Limit(limit).Offset(offset).Execute()
 
-Get Album Tracks 
+Get Album Tracks
 
 
 
@@ -171,11 +171,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    id := "4aawyAB9vmqN3uQ7FjRGTy" // string | 
+    id := "4aawyAB9vmqN3uQ7FjRGTy" // string |
     market := "ES" // string |  (optional)
     limit := int32(10) // int32 |  (optional) (default to 20)
     offset := int32(5) // int32 |  (optional) (default to 0)
@@ -198,7 +198,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** |  | 
+**id** | **string** |  |
 
 ### Other Parameters
 
@@ -208,7 +208,7 @@ Other parameters are passed through a pointer to a apiGetAnAlbumsTracksRequest s
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **market** | **string** |  | 
+ **market** | **string** |  |
  **limit** | **int32** |  | [default to 20]
  **offset** | **int32** |  | [default to 0]
 
@@ -234,7 +234,7 @@ Name | Type | Description  | Notes
 
 > PagingSimplifiedAlbumObject GetAnArtistsAlbums(ctx, id).IncludeGroups(includeGroups).Market(market).Limit(limit).Offset(offset).Execute()
 
-Get Artist's Albums 
+Get Artist's Albums
 
 
 
@@ -247,11 +247,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    id := "0TnOYISbd1XYRBk9myaseg" // string | 
+    id := "0TnOYISbd1XYRBk9myaseg" // string |
     includeGroups := "single,appears_on" // string |  (optional)
     market := "ES" // string |  (optional)
     limit := int32(10) // int32 |  (optional) (default to 20)
@@ -275,7 +275,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** |  | 
+**id** | **string** |  |
 
 ### Other Parameters
 
@@ -285,8 +285,8 @@ Other parameters are passed through a pointer to a apiGetAnArtistsAlbumsRequest 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **includeGroups** | **string** |  | 
- **market** | **string** |  | 
+ **includeGroups** | **string** |  |
+ **market** | **string** |  |
  **limit** | **int32** |  | [default to 20]
  **offset** | **int32** |  | [default to 0]
 
@@ -312,7 +312,7 @@ Name | Type | Description  | Notes
 
 > GetMultipleAlbums200Response GetMultipleAlbums(ctx).Ids(ids).Market(market).Execute()
 
-Get Several Albums 
+Get Several Albums
 
 
 
@@ -325,11 +325,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "382ObEPsp2rxGrnsizN5TX,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWThc" // string | 
+    ids := "382ObEPsp2rxGrnsizN5TX,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWThc" // string |
     market := "ES" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -355,8 +355,8 @@ Other parameters are passed through a pointer to a apiGetMultipleAlbumsRequest s
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
- **market** | **string** |  | 
+ **ids** | **string** |  |
+ **market** | **string** |  |
 
 ### Return type
 
@@ -380,7 +380,7 @@ Name | Type | Description  | Notes
 
 > GetNewReleases200Response GetNewReleases(ctx).Country(country).Limit(limit).Offset(offset).Execute()
 
-Get New Releases 
+Get New Releases
 
 
 
@@ -393,7 +393,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
@@ -424,7 +424,7 @@ Other parameters are passed through a pointer to a apiGetNewReleasesRequest stru
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **country** | **string** |  | 
+ **country** | **string** |  |
  **limit** | **int32** |  | [default to 20]
  **offset** | **int32** |  | [default to 0]
 
@@ -450,7 +450,7 @@ Name | Type | Description  | Notes
 
 > PagingSavedAlbumObject GetUsersSavedAlbums(ctx).Limit(limit).Offset(offset).Market(market).Execute()
 
-Get User's Saved Albums 
+Get User's Saved Albums
 
 
 
@@ -463,7 +463,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
@@ -496,7 +496,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **limit** | **int32** |  | [default to 20]
  **offset** | **int32** |  | [default to 0]
- **market** | **string** |  | 
+ **market** | **string** |  |
 
 ### Return type
 
@@ -520,7 +520,7 @@ Name | Type | Description  | Notes
 
 > RemoveAlbumsUser(ctx).Ids(ids).RequestBody(requestBody).Execute()
 
-Remove Users' Saved Albums 
+Remove Users' Saved Albums
 
 
 
@@ -533,11 +533,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "382ObEPsp2rxGrnsizN5TX,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWThc" // string | 
+    ids := "382ObEPsp2rxGrnsizN5TX,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWThc" // string |
     requestBody := map[string]interface{}{"key": interface{}(123)} // map[string]interface{} |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -561,8 +561,8 @@ Other parameters are passed through a pointer to a apiRemoveAlbumsUserRequest st
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
- **requestBody** | **map[string]interface{}** |  | 
+ **ids** | **string** |  |
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 
@@ -586,7 +586,7 @@ Name | Type | Description  | Notes
 
 > SaveAlbumsUser(ctx).Ids(ids).RequestBody(requestBody).Execute()
 
-Save Albums for Current User 
+Save Albums for Current User
 
 
 
@@ -599,11 +599,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "382ObEPsp2rxGrnsizN5TX,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWThc" // string | 
+    ids := "382ObEPsp2rxGrnsizN5TX,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWThc" // string |
     requestBody := map[string]interface{}{"key": interface{}(123)} // map[string]interface{} |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -627,8 +627,8 @@ Other parameters are passed through a pointer to a apiSaveAlbumsUserRequest stru
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
- **requestBody** | **map[string]interface{}** |  | 
+ **ids** | **string** |  |
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 

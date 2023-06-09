@@ -11,10 +11,11 @@ package openapi
 
 import (
 	"context"
+	"testing"
+
+	openapiclient "github.com/jcoelho93/jcoelho93"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
 )
 
 func Test_openapi_ChaptersApiService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_openapi_ChaptersApiService(t *testing.T) {
 
 	t.Run("Test ChaptersApiService GetAChapter", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var id string
 
@@ -38,7 +39,7 @@ func Test_openapi_ChaptersApiService(t *testing.T) {
 
 	t.Run("Test ChaptersApiService GetAudiobookChapters", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var id string
 
@@ -52,7 +53,7 @@ func Test_openapi_ChaptersApiService(t *testing.T) {
 
 	t.Run("Test ChaptersApiService GetSeveralChapters", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.ChaptersApi.GetSeveralChapters(context.Background()).Execute()
 

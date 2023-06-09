@@ -4,22 +4,22 @@ All URIs are relative to *https://api.spotify.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AddTracksToPlaylist**](PlaylistsApi.md#AddTracksToPlaylist) | **Post** /playlists/{playlist_id}/tracks | Add Items to Playlist 
-[**ChangePlaylistDetails**](PlaylistsApi.md#ChangePlaylistDetails) | **Put** /playlists/{playlist_id} | Change Playlist Details 
-[**CheckIfUserFollowsPlaylist**](PlaylistsApi.md#CheckIfUserFollowsPlaylist) | **Get** /playlists/{playlist_id}/followers/contains | Check if Users Follow Playlist 
-[**CreatePlaylist**](PlaylistsApi.md#CreatePlaylist) | **Post** /users/{user_id}/playlists | Create Playlist 
-[**FollowPlaylist**](PlaylistsApi.md#FollowPlaylist) | **Put** /playlists/{playlist_id}/followers | Follow Playlist 
-[**GetACategoriesPlaylists**](PlaylistsApi.md#GetACategoriesPlaylists) | **Get** /browse/categories/{category_id}/playlists | Get Category&#39;s Playlists 
-[**GetAListOfCurrentUsersPlaylists**](PlaylistsApi.md#GetAListOfCurrentUsersPlaylists) | **Get** /me/playlists | Get Current User&#39;s Playlists 
-[**GetFeaturedPlaylists**](PlaylistsApi.md#GetFeaturedPlaylists) | **Get** /browse/featured-playlists | Get Featured Playlists 
-[**GetListUsersPlaylists**](PlaylistsApi.md#GetListUsersPlaylists) | **Get** /users/{user_id}/playlists | Get User&#39;s Playlists 
-[**GetPlaylist**](PlaylistsApi.md#GetPlaylist) | **Get** /playlists/{playlist_id} | Get Playlist 
-[**GetPlaylistCover**](PlaylistsApi.md#GetPlaylistCover) | **Get** /playlists/{playlist_id}/images | Get Playlist Cover Image 
-[**GetPlaylistsTracks**](PlaylistsApi.md#GetPlaylistsTracks) | **Get** /playlists/{playlist_id}/tracks | Get Playlist Items 
-[**RemoveTracksPlaylist**](PlaylistsApi.md#RemoveTracksPlaylist) | **Delete** /playlists/{playlist_id}/tracks | Remove Playlist Items 
-[**ReorderOrReplacePlaylistsTracks**](PlaylistsApi.md#ReorderOrReplacePlaylistsTracks) | **Put** /playlists/{playlist_id}/tracks | Update Playlist Items 
-[**UnfollowPlaylist**](PlaylistsApi.md#UnfollowPlaylist) | **Delete** /playlists/{playlist_id}/followers | Unfollow Playlist 
-[**UploadCustomPlaylistCover**](PlaylistsApi.md#UploadCustomPlaylistCover) | **Put** /playlists/{playlist_id}/images | Add Custom Playlist Cover Image 
+[**AddTracksToPlaylist**](PlaylistsApi.md#AddTracksToPlaylist) | **Post** /playlists/{playlist_id}/tracks | Add Items to Playlist
+[**ChangePlaylistDetails**](PlaylistsApi.md#ChangePlaylistDetails) | **Put** /playlists/{playlist_id} | Change Playlist Details
+[**CheckIfUserFollowsPlaylist**](PlaylistsApi.md#CheckIfUserFollowsPlaylist) | **Get** /playlists/{playlist_id}/followers/contains | Check if Users Follow Playlist
+[**CreatePlaylist**](PlaylistsApi.md#CreatePlaylist) | **Post** /users/{user_id}/playlists | Create Playlist
+[**FollowPlaylist**](PlaylistsApi.md#FollowPlaylist) | **Put** /playlists/{playlist_id}/followers | Follow Playlist
+[**GetACategoriesPlaylists**](PlaylistsApi.md#GetACategoriesPlaylists) | **Get** /browse/categories/{category_id}/playlists | Get Category&#39;s Playlists
+[**GetAListOfCurrentUsersPlaylists**](PlaylistsApi.md#GetAListOfCurrentUsersPlaylists) | **Get** /me/playlists | Get Current User&#39;s Playlists
+[**GetFeaturedPlaylists**](PlaylistsApi.md#GetFeaturedPlaylists) | **Get** /browse/featured-playlists | Get Featured Playlists
+[**GetListUsersPlaylists**](PlaylistsApi.md#GetListUsersPlaylists) | **Get** /users/{user_id}/playlists | Get User&#39;s Playlists
+[**GetPlaylist**](PlaylistsApi.md#GetPlaylist) | **Get** /playlists/{playlist_id} | Get Playlist
+[**GetPlaylistCover**](PlaylistsApi.md#GetPlaylistCover) | **Get** /playlists/{playlist_id}/images | Get Playlist Cover Image
+[**GetPlaylistsTracks**](PlaylistsApi.md#GetPlaylistsTracks) | **Get** /playlists/{playlist_id}/tracks | Get Playlist Items
+[**RemoveTracksPlaylist**](PlaylistsApi.md#RemoveTracksPlaylist) | **Delete** /playlists/{playlist_id}/tracks | Remove Playlist Items
+[**ReorderOrReplacePlaylistsTracks**](PlaylistsApi.md#ReorderOrReplacePlaylistsTracks) | **Put** /playlists/{playlist_id}/tracks | Update Playlist Items
+[**UnfollowPlaylist**](PlaylistsApi.md#UnfollowPlaylist) | **Delete** /playlists/{playlist_id}/followers | Unfollow Playlist
+[**UploadCustomPlaylistCover**](PlaylistsApi.md#UploadCustomPlaylistCover) | **Put** /playlists/{playlist_id}/images | Add Custom Playlist Cover Image
 
 
 
@@ -27,7 +27,7 @@ Method | HTTP request | Description
 
 > ReorderOrReplacePlaylistsTracks200Response AddTracksToPlaylist(ctx, playlistId).Position(position).Uris(uris).RequestBody(requestBody).Execute()
 
-Add Items to Playlist 
+Add Items to Playlist
 
 
 
@@ -40,11 +40,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string | 
+    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string |
     position := int32(0) // int32 |  (optional)
     uris := "spotify:track:4iV5W9uYEdYUVa79Axb7Rh,spotify:track:1301WleyT98MSxVHPZCA6M" // string |  (optional)
     requestBody := map[string]interface{}{"key": interface{}(123)} // map[string]interface{} |  (optional)
@@ -67,7 +67,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**playlistId** | **string** |  | 
+**playlistId** | **string** |  |
 
 ### Other Parameters
 
@@ -77,9 +77,9 @@ Other parameters are passed through a pointer to a apiAddTracksToPlaylistRequest
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **position** | **int32** |  | 
- **uris** | **string** |  | 
- **requestBody** | **map[string]interface{}** |  | 
+ **position** | **int32** |  |
+ **uris** | **string** |  |
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 
@@ -103,7 +103,7 @@ Name | Type | Description  | Notes
 
 > ChangePlaylistDetails(ctx, playlistId).RequestBody(requestBody).Execute()
 
-Change Playlist Details 
+Change Playlist Details
 
 
 
@@ -116,11 +116,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string | 
+    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string |
     requestBody := map[string]interface{}{"key": interface{}(123)} // map[string]interface{} |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -139,7 +139,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**playlistId** | **string** |  | 
+**playlistId** | **string** |  |
 
 ### Other Parameters
 
@@ -149,7 +149,7 @@ Other parameters are passed through a pointer to a apiChangePlaylistDetailsReque
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **requestBody** | **map[string]interface{}** |  | 
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 
@@ -173,7 +173,7 @@ Name | Type | Description  | Notes
 
 > []bool CheckIfUserFollowsPlaylist(ctx, playlistId).Ids(ids).Execute()
 
-Check if Users Follow Playlist 
+Check if Users Follow Playlist
 
 
 
@@ -186,12 +186,12 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string | 
-    ids := "jmperezperez,thelinmichael,wizzler" // string | 
+    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string |
+    ids := "jmperezperez,thelinmichael,wizzler" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -211,7 +211,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**playlistId** | **string** |  | 
+**playlistId** | **string** |  |
 
 ### Other Parameters
 
@@ -221,7 +221,7 @@ Other parameters are passed through a pointer to a apiCheckIfUserFollowsPlaylist
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **ids** | **string** |  | 
+ **ids** | **string** |  |
 
 ### Return type
 
@@ -245,7 +245,7 @@ Name | Type | Description  | Notes
 
 > PlaylistObject CreatePlaylist(ctx, userId).RequestBody(requestBody).Execute()
 
-Create Playlist 
+Create Playlist
 
 
 
@@ -258,11 +258,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    userId := "smedjan" // string | 
+    userId := "smedjan" // string |
     requestBody := map[string]interface{}{"key": interface{}(123)} // map[string]interface{} |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -283,7 +283,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**userId** | **string** |  | 
+**userId** | **string** |  |
 
 ### Other Parameters
 
@@ -293,7 +293,7 @@ Other parameters are passed through a pointer to a apiCreatePlaylistRequest stru
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **requestBody** | **map[string]interface{}** |  | 
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 
@@ -317,7 +317,7 @@ Name | Type | Description  | Notes
 
 > FollowPlaylist(ctx, playlistId).RequestBody(requestBody).Execute()
 
-Follow Playlist 
+Follow Playlist
 
 
 
@@ -330,11 +330,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string | 
+    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string |
     requestBody := map[string]interface{}{"key": interface{}(123)} // map[string]interface{} |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -353,7 +353,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**playlistId** | **string** |  | 
+**playlistId** | **string** |  |
 
 ### Other Parameters
 
@@ -363,7 +363,7 @@ Other parameters are passed through a pointer to a apiFollowPlaylistRequest stru
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **requestBody** | **map[string]interface{}** |  | 
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 
@@ -387,7 +387,7 @@ Name | Type | Description  | Notes
 
 > PagingFeaturedPlaylistObject GetACategoriesPlaylists(ctx, categoryId).Country(country).Limit(limit).Offset(offset).Execute()
 
-Get Category's Playlists 
+Get Category's Playlists
 
 
 
@@ -400,11 +400,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    categoryId := "dinner" // string | 
+    categoryId := "dinner" // string |
     country := "SE" // string |  (optional)
     limit := int32(10) // int32 |  (optional) (default to 20)
     offset := int32(5) // int32 |  (optional) (default to 0)
@@ -427,7 +427,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**categoryId** | **string** |  | 
+**categoryId** | **string** |  |
 
 ### Other Parameters
 
@@ -437,7 +437,7 @@ Other parameters are passed through a pointer to a apiGetACategoriesPlaylistsReq
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **country** | **string** |  | 
+ **country** | **string** |  |
  **limit** | **int32** |  | [default to 20]
  **offset** | **int32** |  | [default to 0]
 
@@ -463,7 +463,7 @@ Name | Type | Description  | Notes
 
 > PagingPlaylistObject GetAListOfCurrentUsersPlaylists(ctx).Limit(limit).Offset(offset).Execute()
 
-Get Current User's Playlists 
+Get Current User's Playlists
 
 
 
@@ -476,7 +476,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
@@ -531,7 +531,7 @@ Name | Type | Description  | Notes
 
 > PagingFeaturedPlaylistObject GetFeaturedPlaylists(ctx).Country(country).Locale(locale).Timestamp(timestamp).Limit(limit).Offset(offset).Execute()
 
-Get Featured Playlists 
+Get Featured Playlists
 
 
 
@@ -544,7 +544,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
@@ -577,9 +577,9 @@ Other parameters are passed through a pointer to a apiGetFeaturedPlaylistsReques
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **country** | **string** |  | 
- **locale** | **string** |  | 
- **timestamp** | **string** |  | 
+ **country** | **string** |  |
+ **locale** | **string** |  |
+ **timestamp** | **string** |  |
  **limit** | **int32** |  | [default to 20]
  **offset** | **int32** |  | [default to 0]
 
@@ -605,7 +605,7 @@ Name | Type | Description  | Notes
 
 > PagingPlaylistObject GetListUsersPlaylists(ctx, userId).Limit(limit).Offset(offset).Execute()
 
-Get User's Playlists 
+Get User's Playlists
 
 
 
@@ -618,11 +618,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    userId := "smedjan" // string | 
+    userId := "smedjan" // string |
     limit := int32(10) // int32 |  (optional) (default to 20)
     offset := int32(5) // int32 |  (optional) (default to 0)
 
@@ -644,7 +644,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**userId** | **string** |  | 
+**userId** | **string** |  |
 
 ### Other Parameters
 
@@ -679,7 +679,7 @@ Name | Type | Description  | Notes
 
 > PlaylistObject GetPlaylist(ctx, playlistId).Market(market).Fields(fields).AdditionalTypes(additionalTypes).Execute()
 
-Get Playlist 
+Get Playlist
 
 
 
@@ -692,11 +692,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string | 
+    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string |
     market := "ES" // string |  (optional)
     fields := "items(added_by.id,track(name,href,album(name,href)))" // string |  (optional)
     additionalTypes := "additionalTypes_example" // string |  (optional)
@@ -719,7 +719,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**playlistId** | **string** |  | 
+**playlistId** | **string** |  |
 
 ### Other Parameters
 
@@ -729,9 +729,9 @@ Other parameters are passed through a pointer to a apiGetPlaylistRequest struct 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **market** | **string** |  | 
- **fields** | **string** |  | 
- **additionalTypes** | **string** |  | 
+ **market** | **string** |  |
+ **fields** | **string** |  |
+ **additionalTypes** | **string** |  |
 
 ### Return type
 
@@ -755,7 +755,7 @@ Name | Type | Description  | Notes
 
 > []ImageObject GetPlaylistCover(ctx, playlistId).Execute()
 
-Get Playlist Cover Image 
+Get Playlist Cover Image
 
 
 
@@ -768,11 +768,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string | 
+    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -792,7 +792,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**playlistId** | **string** |  | 
+**playlistId** | **string** |  |
 
 ### Other Parameters
 
@@ -825,7 +825,7 @@ Name | Type | Description  | Notes
 
 > PagingPlaylistTrackObject GetPlaylistsTracks(ctx, playlistId).Market(market).Fields(fields).Limit(limit).Offset(offset).AdditionalTypes(additionalTypes).Execute()
 
-Get Playlist Items 
+Get Playlist Items
 
 
 
@@ -838,11 +838,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string | 
+    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string |
     market := "ES" // string |  (optional)
     fields := "items(added_by.id,track(name,href,album(name,href)))" // string |  (optional)
     limit := int32(10) // int32 |  (optional) (default to 20)
@@ -867,7 +867,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**playlistId** | **string** |  | 
+**playlistId** | **string** |  |
 
 ### Other Parameters
 
@@ -877,11 +877,11 @@ Other parameters are passed through a pointer to a apiGetPlaylistsTracksRequest 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **market** | **string** |  | 
- **fields** | **string** |  | 
+ **market** | **string** |  |
+ **fields** | **string** |  |
  **limit** | **int32** |  | [default to 20]
  **offset** | **int32** |  | [default to 0]
- **additionalTypes** | **string** |  | 
+ **additionalTypes** | **string** |  |
 
 ### Return type
 
@@ -905,7 +905,7 @@ Name | Type | Description  | Notes
 
 > ReorderOrReplacePlaylistsTracks200Response RemoveTracksPlaylist(ctx, playlistId).RemoveTracksPlaylistRequest(removeTracksPlaylistRequest).Execute()
 
-Remove Playlist Items 
+Remove Playlist Items
 
 
 
@@ -918,11 +918,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string | 
+    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string |
     removeTracksPlaylistRequest := *openapiclient.NewRemoveTracksPlaylistRequest([]openapiclient.RemoveTracksPlaylistRequestTracksInner{*openapiclient.NewRemoveTracksPlaylistRequestTracksInner()}) // RemoveTracksPlaylistRequest |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -943,7 +943,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**playlistId** | **string** |  | 
+**playlistId** | **string** |  |
 
 ### Other Parameters
 
@@ -953,7 +953,7 @@ Other parameters are passed through a pointer to a apiRemoveTracksPlaylistReques
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **removeTracksPlaylistRequest** | [**RemoveTracksPlaylistRequest**](RemoveTracksPlaylistRequest.md) |  | 
+ **removeTracksPlaylistRequest** | [**RemoveTracksPlaylistRequest**](RemoveTracksPlaylistRequest.md) |  |
 
 ### Return type
 
@@ -977,7 +977,7 @@ Name | Type | Description  | Notes
 
 > ReorderOrReplacePlaylistsTracks200Response ReorderOrReplacePlaylistsTracks(ctx, playlistId).Uris(uris).RequestBody(requestBody).Execute()
 
-Update Playlist Items 
+Update Playlist Items
 
 
 
@@ -990,11 +990,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string | 
+    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string |
     uris := "uris_example" // string |  (optional)
     requestBody := map[string]interface{}{"key": interface{}(123)} // map[string]interface{} |  (optional)
 
@@ -1016,7 +1016,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**playlistId** | **string** |  | 
+**playlistId** | **string** |  |
 
 ### Other Parameters
 
@@ -1026,8 +1026,8 @@ Other parameters are passed through a pointer to a apiReorderOrReplacePlaylistsT
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **uris** | **string** |  | 
- **requestBody** | **map[string]interface{}** |  | 
+ **uris** | **string** |  |
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 
@@ -1051,7 +1051,7 @@ Name | Type | Description  | Notes
 
 > UnfollowPlaylist(ctx, playlistId).Execute()
 
-Unfollow Playlist 
+Unfollow Playlist
 
 
 
@@ -1064,11 +1064,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string | 
+    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -1086,7 +1086,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**playlistId** | **string** |  | 
+**playlistId** | **string** |  |
 
 ### Other Parameters
 
@@ -1119,7 +1119,7 @@ Name | Type | Description  | Notes
 
 > UploadCustomPlaylistCover(ctx, playlistId).Body(body).Execute()
 
-Add Custom Playlist Cover Image 
+Add Custom Playlist Cover Image
 
 
 
@@ -1132,12 +1132,12 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string | 
-    body := "body_example" // string | 
+    playlistId := "3cEYpjA9oz9GiPac4AsH4n" // string |
+    body := "body_example" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -1155,7 +1155,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**playlistId** | **string** |  | 
+**playlistId** | **string** |  |
 
 ### Other Parameters
 
@@ -1165,7 +1165,7 @@ Other parameters are passed through a pointer to a apiUploadCustomPlaylistCoverR
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **body** | **string** |  | 
+ **body** | **string** |  |
 
 ### Return type
 

@@ -11,10 +11,11 @@ package openapi
 
 import (
 	"context"
+	"testing"
+
+	openapiclient "github.com/jcoelho93/jcoelho93"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
 )
 
 func Test_openapi_AudiobooksApiService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_openapi_AudiobooksApiService(t *testing.T) {
 
 	t.Run("Test AudiobooksApiService CheckUsersSavedAudiobooks", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.AudiobooksApi.CheckUsersSavedAudiobooks(context.Background()).Execute()
 
@@ -36,7 +37,7 @@ func Test_openapi_AudiobooksApiService(t *testing.T) {
 
 	t.Run("Test AudiobooksApiService GetAnAudiobook", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var id string
 
@@ -50,7 +51,7 @@ func Test_openapi_AudiobooksApiService(t *testing.T) {
 
 	t.Run("Test AudiobooksApiService GetAudiobookChapters", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var id string
 
@@ -64,7 +65,7 @@ func Test_openapi_AudiobooksApiService(t *testing.T) {
 
 	t.Run("Test AudiobooksApiService GetMultipleAudiobooks", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.AudiobooksApi.GetMultipleAudiobooks(context.Background()).Execute()
 
@@ -76,7 +77,7 @@ func Test_openapi_AudiobooksApiService(t *testing.T) {
 
 	t.Run("Test AudiobooksApiService GetUsersSavedAudiobooks", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.AudiobooksApi.GetUsersSavedAudiobooks(context.Background()).Execute()
 
@@ -88,7 +89,7 @@ func Test_openapi_AudiobooksApiService(t *testing.T) {
 
 	t.Run("Test AudiobooksApiService RemoveAudiobooksUser", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.AudiobooksApi.RemoveAudiobooksUser(context.Background()).Execute()
 
@@ -99,7 +100,7 @@ func Test_openapi_AudiobooksApiService(t *testing.T) {
 
 	t.Run("Test AudiobooksApiService SaveAudiobooksUser", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.AudiobooksApi.SaveAudiobooksUser(context.Background()).Execute()
 

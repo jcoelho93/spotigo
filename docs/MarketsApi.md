@@ -4,7 +4,7 @@ All URIs are relative to *https://api.spotify.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GetAvailableMarkets**](MarketsApi.md#GetAvailableMarkets) | **Get** /markets | Get Available Markets 
+[**GetAvailableMarkets**](MarketsApi.md#GetAvailableMarkets) | **Get** /markets | Get Available Markets
 
 
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 > GetAvailableMarkets200Response GetAvailableMarkets(ctx).Execute()
 
-Get Available Markets 
+Get Available Markets
 
 
 
@@ -25,7 +25,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {

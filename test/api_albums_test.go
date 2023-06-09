@@ -11,10 +11,11 @@ package openapi
 
 import (
 	"context"
+	"testing"
+
+	openapiclient "github.com/jcoelho93/jcoelho93"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
 )
 
 func Test_openapi_AlbumsApiService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_openapi_AlbumsApiService(t *testing.T) {
 
 	t.Run("Test AlbumsApiService CheckUsersSavedAlbums", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.AlbumsApi.CheckUsersSavedAlbums(context.Background()).Execute()
 
@@ -36,7 +37,7 @@ func Test_openapi_AlbumsApiService(t *testing.T) {
 
 	t.Run("Test AlbumsApiService GetAnAlbum", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var id string
 
@@ -50,7 +51,7 @@ func Test_openapi_AlbumsApiService(t *testing.T) {
 
 	t.Run("Test AlbumsApiService GetAnAlbumsTracks", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var id string
 
@@ -64,7 +65,7 @@ func Test_openapi_AlbumsApiService(t *testing.T) {
 
 	t.Run("Test AlbumsApiService GetAnArtistsAlbums", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var id string
 
@@ -78,7 +79,7 @@ func Test_openapi_AlbumsApiService(t *testing.T) {
 
 	t.Run("Test AlbumsApiService GetMultipleAlbums", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.AlbumsApi.GetMultipleAlbums(context.Background()).Execute()
 
@@ -90,7 +91,7 @@ func Test_openapi_AlbumsApiService(t *testing.T) {
 
 	t.Run("Test AlbumsApiService GetNewReleases", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.AlbumsApi.GetNewReleases(context.Background()).Execute()
 
@@ -102,7 +103,7 @@ func Test_openapi_AlbumsApiService(t *testing.T) {
 
 	t.Run("Test AlbumsApiService GetUsersSavedAlbums", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.AlbumsApi.GetUsersSavedAlbums(context.Background()).Execute()
 
@@ -114,7 +115,7 @@ func Test_openapi_AlbumsApiService(t *testing.T) {
 
 	t.Run("Test AlbumsApiService RemoveAlbumsUser", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.AlbumsApi.RemoveAlbumsUser(context.Background()).Execute()
 
@@ -125,7 +126,7 @@ func Test_openapi_AlbumsApiService(t *testing.T) {
 
 	t.Run("Test AlbumsApiService SaveAlbumsUser", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.AlbumsApi.SaveAlbumsUser(context.Background()).Execute()
 

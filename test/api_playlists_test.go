@@ -11,10 +11,11 @@ package openapi
 
 import (
 	"context"
+	"testing"
+
+	openapiclient "github.com/jcoelho93/jcoelho93"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
 )
 
 func Test_openapi_PlaylistsApiService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_openapi_PlaylistsApiService(t *testing.T) {
 
 	t.Run("Test PlaylistsApiService AddTracksToPlaylist", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var playlistId string
 
@@ -38,7 +39,7 @@ func Test_openapi_PlaylistsApiService(t *testing.T) {
 
 	t.Run("Test PlaylistsApiService ChangePlaylistDetails", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var playlistId string
 
@@ -51,7 +52,7 @@ func Test_openapi_PlaylistsApiService(t *testing.T) {
 
 	t.Run("Test PlaylistsApiService CheckIfUserFollowsPlaylist", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var playlistId string
 
@@ -65,7 +66,7 @@ func Test_openapi_PlaylistsApiService(t *testing.T) {
 
 	t.Run("Test PlaylistsApiService CreatePlaylist", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var userId string
 
@@ -79,7 +80,7 @@ func Test_openapi_PlaylistsApiService(t *testing.T) {
 
 	t.Run("Test PlaylistsApiService FollowPlaylist", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var playlistId string
 
@@ -92,7 +93,7 @@ func Test_openapi_PlaylistsApiService(t *testing.T) {
 
 	t.Run("Test PlaylistsApiService GetACategoriesPlaylists", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var categoryId string
 
@@ -106,7 +107,7 @@ func Test_openapi_PlaylistsApiService(t *testing.T) {
 
 	t.Run("Test PlaylistsApiService GetAListOfCurrentUsersPlaylists", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.PlaylistsApi.GetAListOfCurrentUsersPlaylists(context.Background()).Execute()
 
@@ -118,7 +119,7 @@ func Test_openapi_PlaylistsApiService(t *testing.T) {
 
 	t.Run("Test PlaylistsApiService GetFeaturedPlaylists", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.PlaylistsApi.GetFeaturedPlaylists(context.Background()).Execute()
 
@@ -130,7 +131,7 @@ func Test_openapi_PlaylistsApiService(t *testing.T) {
 
 	t.Run("Test PlaylistsApiService GetListUsersPlaylists", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var userId string
 
@@ -144,7 +145,7 @@ func Test_openapi_PlaylistsApiService(t *testing.T) {
 
 	t.Run("Test PlaylistsApiService GetPlaylist", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var playlistId string
 
@@ -158,7 +159,7 @@ func Test_openapi_PlaylistsApiService(t *testing.T) {
 
 	t.Run("Test PlaylistsApiService GetPlaylistCover", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var playlistId string
 
@@ -172,7 +173,7 @@ func Test_openapi_PlaylistsApiService(t *testing.T) {
 
 	t.Run("Test PlaylistsApiService GetPlaylistsTracks", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var playlistId string
 
@@ -186,7 +187,7 @@ func Test_openapi_PlaylistsApiService(t *testing.T) {
 
 	t.Run("Test PlaylistsApiService RemoveTracksPlaylist", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var playlistId string
 
@@ -200,7 +201,7 @@ func Test_openapi_PlaylistsApiService(t *testing.T) {
 
 	t.Run("Test PlaylistsApiService ReorderOrReplacePlaylistsTracks", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var playlistId string
 
@@ -214,7 +215,7 @@ func Test_openapi_PlaylistsApiService(t *testing.T) {
 
 	t.Run("Test PlaylistsApiService UnfollowPlaylist", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var playlistId string
 
@@ -227,7 +228,7 @@ func Test_openapi_PlaylistsApiService(t *testing.T) {
 
 	t.Run("Test PlaylistsApiService UploadCustomPlaylistCover", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var playlistId string
 

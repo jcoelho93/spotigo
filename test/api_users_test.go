@@ -11,10 +11,11 @@ package openapi
 
 import (
 	"context"
+	"testing"
+
+	openapiclient "github.com/jcoelho93/jcoelho93"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
 )
 
 func Test_openapi_UsersApiService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_openapi_UsersApiService(t *testing.T) {
 
 	t.Run("Test UsersApiService CheckCurrentUserFollows", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.UsersApi.CheckCurrentUserFollows(context.Background()).Execute()
 
@@ -36,7 +37,7 @@ func Test_openapi_UsersApiService(t *testing.T) {
 
 	t.Run("Test UsersApiService CheckIfUserFollowsPlaylist", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var playlistId string
 
@@ -50,7 +51,7 @@ func Test_openapi_UsersApiService(t *testing.T) {
 
 	t.Run("Test UsersApiService FollowArtistsUsers", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.UsersApi.FollowArtistsUsers(context.Background()).Execute()
 
@@ -61,7 +62,7 @@ func Test_openapi_UsersApiService(t *testing.T) {
 
 	t.Run("Test UsersApiService FollowPlaylist", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var playlistId string
 
@@ -74,7 +75,7 @@ func Test_openapi_UsersApiService(t *testing.T) {
 
 	t.Run("Test UsersApiService GetCurrentUsersProfile", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.UsersApi.GetCurrentUsersProfile(context.Background()).Execute()
 
@@ -86,7 +87,7 @@ func Test_openapi_UsersApiService(t *testing.T) {
 
 	t.Run("Test UsersApiService GetFollowed", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.UsersApi.GetFollowed(context.Background()).Execute()
 
@@ -98,7 +99,7 @@ func Test_openapi_UsersApiService(t *testing.T) {
 
 	t.Run("Test UsersApiService GetListUsersPlaylists", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var userId string
 
@@ -112,7 +113,7 @@ func Test_openapi_UsersApiService(t *testing.T) {
 
 	t.Run("Test UsersApiService GetUsersProfile", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var userId string
 
@@ -126,7 +127,7 @@ func Test_openapi_UsersApiService(t *testing.T) {
 
 	t.Run("Test UsersApiService GetUsersTopArtists", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.UsersApi.GetUsersTopArtists(context.Background()).Execute()
 
@@ -138,7 +139,7 @@ func Test_openapi_UsersApiService(t *testing.T) {
 
 	t.Run("Test UsersApiService GetUsersTopTracks", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.UsersApi.GetUsersTopTracks(context.Background()).Execute()
 
@@ -150,7 +151,7 @@ func Test_openapi_UsersApiService(t *testing.T) {
 
 	t.Run("Test UsersApiService UnfollowArtistsUsers", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.UsersApi.UnfollowArtistsUsers(context.Background()).Execute()
 
@@ -161,7 +162,7 @@ func Test_openapi_UsersApiService(t *testing.T) {
 
 	t.Run("Test UsersApiService UnfollowPlaylist", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var playlistId string
 

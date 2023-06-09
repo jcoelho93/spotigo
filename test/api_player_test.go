@@ -11,10 +11,11 @@ package openapi
 
 import (
 	"context"
+	"testing"
+
+	openapiclient "github.com/jcoelho93/jcoelho93"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
 )
 
 func Test_openapi_PlayerApiService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_openapi_PlayerApiService(t *testing.T) {
 
 	t.Run("Test PlayerApiService AddToQueue", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.PlayerApi.AddToQueue(context.Background()).Execute()
 
@@ -35,7 +36,7 @@ func Test_openapi_PlayerApiService(t *testing.T) {
 
 	t.Run("Test PlayerApiService GetAUsersAvailableDevices", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.PlayerApi.GetAUsersAvailableDevices(context.Background()).Execute()
 
@@ -47,7 +48,7 @@ func Test_openapi_PlayerApiService(t *testing.T) {
 
 	t.Run("Test PlayerApiService GetInformationAboutTheUsersCurrentPlayback", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.PlayerApi.GetInformationAboutTheUsersCurrentPlayback(context.Background()).Execute()
 
@@ -59,7 +60,7 @@ func Test_openapi_PlayerApiService(t *testing.T) {
 
 	t.Run("Test PlayerApiService GetQueue", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.PlayerApi.GetQueue(context.Background()).Execute()
 
@@ -71,7 +72,7 @@ func Test_openapi_PlayerApiService(t *testing.T) {
 
 	t.Run("Test PlayerApiService GetRecentlyPlayed", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.PlayerApi.GetRecentlyPlayed(context.Background()).Execute()
 
@@ -83,7 +84,7 @@ func Test_openapi_PlayerApiService(t *testing.T) {
 
 	t.Run("Test PlayerApiService GetTheUsersCurrentlyPlayingTrack", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.PlayerApi.GetTheUsersCurrentlyPlayingTrack(context.Background()).Execute()
 
@@ -95,7 +96,7 @@ func Test_openapi_PlayerApiService(t *testing.T) {
 
 	t.Run("Test PlayerApiService PauseAUsersPlayback", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.PlayerApi.PauseAUsersPlayback(context.Background()).Execute()
 
@@ -106,7 +107,7 @@ func Test_openapi_PlayerApiService(t *testing.T) {
 
 	t.Run("Test PlayerApiService SeekToPositionInCurrentlyPlayingTrack", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.PlayerApi.SeekToPositionInCurrentlyPlayingTrack(context.Background()).Execute()
 
@@ -117,7 +118,7 @@ func Test_openapi_PlayerApiService(t *testing.T) {
 
 	t.Run("Test PlayerApiService SetRepeatModeOnUsersPlayback", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.PlayerApi.SetRepeatModeOnUsersPlayback(context.Background()).Execute()
 
@@ -128,7 +129,7 @@ func Test_openapi_PlayerApiService(t *testing.T) {
 
 	t.Run("Test PlayerApiService SetVolumeForUsersPlayback", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.PlayerApi.SetVolumeForUsersPlayback(context.Background()).Execute()
 
@@ -139,7 +140,7 @@ func Test_openapi_PlayerApiService(t *testing.T) {
 
 	t.Run("Test PlayerApiService SkipUsersPlaybackToNextTrack", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.PlayerApi.SkipUsersPlaybackToNextTrack(context.Background()).Execute()
 
@@ -150,7 +151,7 @@ func Test_openapi_PlayerApiService(t *testing.T) {
 
 	t.Run("Test PlayerApiService SkipUsersPlaybackToPreviousTrack", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.PlayerApi.SkipUsersPlaybackToPreviousTrack(context.Background()).Execute()
 
@@ -161,7 +162,7 @@ func Test_openapi_PlayerApiService(t *testing.T) {
 
 	t.Run("Test PlayerApiService StartAUsersPlayback", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.PlayerApi.StartAUsersPlayback(context.Background()).Execute()
 
@@ -172,7 +173,7 @@ func Test_openapi_PlayerApiService(t *testing.T) {
 
 	t.Run("Test PlayerApiService ToggleShuffleForUsersPlayback", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.PlayerApi.ToggleShuffleForUsersPlayback(context.Background()).Execute()
 
@@ -183,7 +184,7 @@ func Test_openapi_PlayerApiService(t *testing.T) {
 
 	t.Run("Test PlayerApiService TransferAUsersPlayback", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.PlayerApi.TransferAUsersPlayback(context.Background()).Execute()
 

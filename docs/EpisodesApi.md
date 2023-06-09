@@ -4,13 +4,13 @@ All URIs are relative to *https://api.spotify.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CheckUsersSavedEpisodes**](EpisodesApi.md#CheckUsersSavedEpisodes) | **Get** /me/episodes/contains | Check User&#39;s Saved Episodes 
-[**GetAShowsEpisodes**](EpisodesApi.md#GetAShowsEpisodes) | **Get** /shows/{id}/episodes | Get Show Episodes 
-[**GetAnEpisode**](EpisodesApi.md#GetAnEpisode) | **Get** /episodes/{id} | Get Episode 
-[**GetMultipleEpisodes**](EpisodesApi.md#GetMultipleEpisodes) | **Get** /episodes | Get Several Episodes 
-[**GetUsersSavedEpisodes**](EpisodesApi.md#GetUsersSavedEpisodes) | **Get** /me/episodes | Get User&#39;s Saved Episodes 
-[**RemoveEpisodesUser**](EpisodesApi.md#RemoveEpisodesUser) | **Delete** /me/episodes | Remove User&#39;s Saved Episodes 
-[**SaveEpisodesUser**](EpisodesApi.md#SaveEpisodesUser) | **Put** /me/episodes | Save Episodes for Current User 
+[**CheckUsersSavedEpisodes**](EpisodesApi.md#CheckUsersSavedEpisodes) | **Get** /me/episodes/contains | Check User&#39;s Saved Episodes
+[**GetAShowsEpisodes**](EpisodesApi.md#GetAShowsEpisodes) | **Get** /shows/{id}/episodes | Get Show Episodes
+[**GetAnEpisode**](EpisodesApi.md#GetAnEpisode) | **Get** /episodes/{id} | Get Episode
+[**GetMultipleEpisodes**](EpisodesApi.md#GetMultipleEpisodes) | **Get** /episodes | Get Several Episodes
+[**GetUsersSavedEpisodes**](EpisodesApi.md#GetUsersSavedEpisodes) | **Get** /me/episodes | Get User&#39;s Saved Episodes
+[**RemoveEpisodesUser**](EpisodesApi.md#RemoveEpisodesUser) | **Delete** /me/episodes | Remove User&#39;s Saved Episodes
+[**SaveEpisodesUser**](EpisodesApi.md#SaveEpisodesUser) | **Put** /me/episodes | Save Episodes for Current User
 
 
 
@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 > []bool CheckUsersSavedEpisodes(ctx).Ids(ids).Execute()
 
-Check User's Saved Episodes 
+Check User's Saved Episodes
 
 
 
@@ -31,11 +31,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "77o6BIVlYM3msb4MMIL1jH,0Q86acNRm6V9GYx55SXKwf" // string | 
+    ids := "77o6BIVlYM3msb4MMIL1jH,0Q86acNRm6V9GYx55SXKwf" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -60,7 +60,7 @@ Other parameters are passed through a pointer to a apiCheckUsersSavedEpisodesReq
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
+ **ids** | **string** |  |
 
 ### Return type
 
@@ -84,7 +84,7 @@ Name | Type | Description  | Notes
 
 > PagingSimplifiedEpisodeObject GetAShowsEpisodes(ctx, id).Market(market).Limit(limit).Offset(offset).Execute()
 
-Get Show Episodes 
+Get Show Episodes
 
 
 
@@ -97,11 +97,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    id := "38bS44xjbVVZ3No3ByF1dJ" // string | 
+    id := "38bS44xjbVVZ3No3ByF1dJ" // string |
     market := "ES" // string |  (optional)
     limit := int32(10) // int32 |  (optional) (default to 20)
     offset := int32(5) // int32 |  (optional) (default to 0)
@@ -124,7 +124,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** |  | 
+**id** | **string** |  |
 
 ### Other Parameters
 
@@ -134,7 +134,7 @@ Other parameters are passed through a pointer to a apiGetAShowsEpisodesRequest s
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **market** | **string** |  | 
+ **market** | **string** |  |
  **limit** | **int32** |  | [default to 20]
  **offset** | **int32** |  | [default to 0]
 
@@ -160,7 +160,7 @@ Name | Type | Description  | Notes
 
 > EpisodeObject GetAnEpisode(ctx, id).Market(market).Execute()
 
-Get Episode 
+Get Episode
 
 
 
@@ -173,11 +173,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    id := "512ojhOuo1ktJprKbVcKyQ" // string | 
+    id := "512ojhOuo1ktJprKbVcKyQ" // string |
     market := "ES" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -198,7 +198,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** |  | 
+**id** | **string** |  |
 
 ### Other Parameters
 
@@ -208,7 +208,7 @@ Other parameters are passed through a pointer to a apiGetAnEpisodeRequest struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **market** | **string** |  | 
+ **market** | **string** |  |
 
 ### Return type
 
@@ -232,7 +232,7 @@ Name | Type | Description  | Notes
 
 > GetMultipleEpisodes200Response GetMultipleEpisodes(ctx).Ids(ids).Market(market).Execute()
 
-Get Several Episodes 
+Get Several Episodes
 
 
 
@@ -245,11 +245,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "77o6BIVlYM3msb4MMIL1jH,0Q86acNRm6V9GYx55SXKwf" // string | 
+    ids := "77o6BIVlYM3msb4MMIL1jH,0Q86acNRm6V9GYx55SXKwf" // string |
     market := "ES" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -275,8 +275,8 @@ Other parameters are passed through a pointer to a apiGetMultipleEpisodesRequest
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
- **market** | **string** |  | 
+ **ids** | **string** |  |
+ **market** | **string** |  |
 
 ### Return type
 
@@ -300,7 +300,7 @@ Name | Type | Description  | Notes
 
 > PagingSavedEpisodeObject GetUsersSavedEpisodes(ctx).Market(market).Limit(limit).Offset(offset).Execute()
 
-Get User's Saved Episodes 
+Get User's Saved Episodes
 
 
 
@@ -313,7 +313,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
@@ -344,7 +344,7 @@ Other parameters are passed through a pointer to a apiGetUsersSavedEpisodesReque
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **market** | **string** |  | 
+ **market** | **string** |  |
  **limit** | **int32** |  | [default to 20]
  **offset** | **int32** |  | [default to 0]
 
@@ -370,7 +370,7 @@ Name | Type | Description  | Notes
 
 > RemoveEpisodesUser(ctx).Ids(ids).RequestBody(requestBody).Execute()
 
-Remove User's Saved Episodes 
+Remove User's Saved Episodes
 
 
 
@@ -383,11 +383,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "7ouMYWpwJ422jRcDASZB7P,4VqPOruhp5EdPBeR92t6lQ,2takcwOaAZWiXQijPHIx7B" // string | 
+    ids := "7ouMYWpwJ422jRcDASZB7P,4VqPOruhp5EdPBeR92t6lQ,2takcwOaAZWiXQijPHIx7B" // string |
     requestBody := map[string]interface{}{"key": interface{}(123)} // map[string]interface{} |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -411,8 +411,8 @@ Other parameters are passed through a pointer to a apiRemoveEpisodesUserRequest 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
- **requestBody** | **map[string]interface{}** |  | 
+ **ids** | **string** |  |
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 
@@ -436,7 +436,7 @@ Name | Type | Description  | Notes
 
 > SaveEpisodesUser(ctx).Ids(ids).RequestBody(requestBody).Execute()
 
-Save Episodes for Current User 
+Save Episodes for Current User
 
 
 
@@ -449,11 +449,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "77o6BIVlYM3msb4MMIL1jH,0Q86acNRm6V9GYx55SXKwf" // string | 
+    ids := "77o6BIVlYM3msb4MMIL1jH,0Q86acNRm6V9GYx55SXKwf" // string |
     requestBody := map[string]interface{}{"key": interface{}(123)} // map[string]interface{} |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -477,8 +477,8 @@ Other parameters are passed through a pointer to a apiSaveEpisodesUserRequest st
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
- **requestBody** | **map[string]interface{}** |  | 
+ **ids** | **string** |  |
+ **requestBody** | **map[string]interface{}** |  |
 
 ### Return type
 

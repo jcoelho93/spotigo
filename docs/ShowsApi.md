@@ -4,13 +4,13 @@ All URIs are relative to *https://api.spotify.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CheckUsersSavedShows**](ShowsApi.md#CheckUsersSavedShows) | **Get** /me/shows/contains | Check User&#39;s Saved Shows 
-[**GetAShow**](ShowsApi.md#GetAShow) | **Get** /shows/{id} | Get Show 
-[**GetAShowsEpisodes**](ShowsApi.md#GetAShowsEpisodes) | **Get** /shows/{id}/episodes | Get Show Episodes 
-[**GetMultipleShows**](ShowsApi.md#GetMultipleShows) | **Get** /shows | Get Several Shows 
-[**GetUsersSavedShows**](ShowsApi.md#GetUsersSavedShows) | **Get** /me/shows | Get User&#39;s Saved Shows 
-[**RemoveShowsUser**](ShowsApi.md#RemoveShowsUser) | **Delete** /me/shows | Remove User&#39;s Saved Shows 
-[**SaveShowsUser**](ShowsApi.md#SaveShowsUser) | **Put** /me/shows | Save Shows for Current User 
+[**CheckUsersSavedShows**](ShowsApi.md#CheckUsersSavedShows) | **Get** /me/shows/contains | Check User&#39;s Saved Shows
+[**GetAShow**](ShowsApi.md#GetAShow) | **Get** /shows/{id} | Get Show
+[**GetAShowsEpisodes**](ShowsApi.md#GetAShowsEpisodes) | **Get** /shows/{id}/episodes | Get Show Episodes
+[**GetMultipleShows**](ShowsApi.md#GetMultipleShows) | **Get** /shows | Get Several Shows
+[**GetUsersSavedShows**](ShowsApi.md#GetUsersSavedShows) | **Get** /me/shows | Get User&#39;s Saved Shows
+[**RemoveShowsUser**](ShowsApi.md#RemoveShowsUser) | **Delete** /me/shows | Remove User&#39;s Saved Shows
+[**SaveShowsUser**](ShowsApi.md#SaveShowsUser) | **Put** /me/shows | Save Shows for Current User
 
 
 
@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 > []bool CheckUsersSavedShows(ctx).Ids(ids).Execute()
 
-Check User's Saved Shows 
+Check User's Saved Shows
 
 
 
@@ -31,11 +31,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "5CfCWKI5pZ28U0uOzXkDHe,5as3aKmN2k11yfDDDSrvaZ" // string | 
+    ids := "5CfCWKI5pZ28U0uOzXkDHe,5as3aKmN2k11yfDDDSrvaZ" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -60,7 +60,7 @@ Other parameters are passed through a pointer to a apiCheckUsersSavedShowsReques
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
+ **ids** | **string** |  |
 
 ### Return type
 
@@ -84,7 +84,7 @@ Name | Type | Description  | Notes
 
 > ShowObject GetAShow(ctx, id).Market(market).Execute()
 
-Get Show 
+Get Show
 
 
 
@@ -97,11 +97,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    id := "38bS44xjbVVZ3No3ByF1dJ" // string | 
+    id := "38bS44xjbVVZ3No3ByF1dJ" // string |
     market := "ES" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -122,7 +122,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** |  | 
+**id** | **string** |  |
 
 ### Other Parameters
 
@@ -132,7 +132,7 @@ Other parameters are passed through a pointer to a apiGetAShowRequest struct via
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **market** | **string** |  | 
+ **market** | **string** |  |
 
 ### Return type
 
@@ -156,7 +156,7 @@ Name | Type | Description  | Notes
 
 > PagingSimplifiedEpisodeObject GetAShowsEpisodes(ctx, id).Market(market).Limit(limit).Offset(offset).Execute()
 
-Get Show Episodes 
+Get Show Episodes
 
 
 
@@ -169,11 +169,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    id := "38bS44xjbVVZ3No3ByF1dJ" // string | 
+    id := "38bS44xjbVVZ3No3ByF1dJ" // string |
     market := "ES" // string |  (optional)
     limit := int32(10) // int32 |  (optional) (default to 20)
     offset := int32(5) // int32 |  (optional) (default to 0)
@@ -196,7 +196,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** |  | 
+**id** | **string** |  |
 
 ### Other Parameters
 
@@ -206,7 +206,7 @@ Other parameters are passed through a pointer to a apiGetAShowsEpisodesRequest s
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **market** | **string** |  | 
+ **market** | **string** |  |
  **limit** | **int32** |  | [default to 20]
  **offset** | **int32** |  | [default to 0]
 
@@ -232,7 +232,7 @@ Name | Type | Description  | Notes
 
 > GetMultipleShows200Response GetMultipleShows(ctx).Ids(ids).Market(market).Execute()
 
-Get Several Shows 
+Get Several Shows
 
 
 
@@ -245,11 +245,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "5CfCWKI5pZ28U0uOzXkDHe,5as3aKmN2k11yfDDDSrvaZ" // string | 
+    ids := "5CfCWKI5pZ28U0uOzXkDHe,5as3aKmN2k11yfDDDSrvaZ" // string |
     market := "ES" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -275,8 +275,8 @@ Other parameters are passed through a pointer to a apiGetMultipleShowsRequest st
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
- **market** | **string** |  | 
+ **ids** | **string** |  |
+ **market** | **string** |  |
 
 ### Return type
 
@@ -300,7 +300,7 @@ Name | Type | Description  | Notes
 
 > PagingSavedShowObject GetUsersSavedShows(ctx).Limit(limit).Offset(offset).Execute()
 
-Get User's Saved Shows 
+Get User's Saved Shows
 
 
 
@@ -313,7 +313,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
@@ -368,7 +368,7 @@ Name | Type | Description  | Notes
 
 > RemoveShowsUser(ctx).Ids(ids).Market(market).SaveShowsUserRequest(saveShowsUserRequest).Execute()
 
-Remove User's Saved Shows 
+Remove User's Saved Shows
 
 
 
@@ -381,11 +381,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "5CfCWKI5pZ28U0uOzXkDHe,5as3aKmN2k11yfDDDSrvaZ" // string | 
+    ids := "5CfCWKI5pZ28U0uOzXkDHe,5as3aKmN2k11yfDDDSrvaZ" // string |
     market := "ES" // string |  (optional)
     saveShowsUserRequest := *openapiclient.NewSaveShowsUserRequest() // SaveShowsUserRequest |  (optional)
 
@@ -410,9 +410,9 @@ Other parameters are passed through a pointer to a apiRemoveShowsUserRequest str
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
- **market** | **string** |  | 
- **saveShowsUserRequest** | [**SaveShowsUserRequest**](SaveShowsUserRequest.md) |  | 
+ **ids** | **string** |  |
+ **market** | **string** |  |
+ **saveShowsUserRequest** | [**SaveShowsUserRequest**](SaveShowsUserRequest.md) |  |
 
 ### Return type
 
@@ -436,7 +436,7 @@ Name | Type | Description  | Notes
 
 > SaveShowsUser(ctx).Ids(ids).SaveShowsUserRequest(saveShowsUserRequest).Execute()
 
-Save Shows for Current User 
+Save Shows for Current User
 
 
 
@@ -449,11 +449,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/jcoelho93/jcoelho93"
 )
 
 func main() {
-    ids := "5CfCWKI5pZ28U0uOzXkDHe,5as3aKmN2k11yfDDDSrvaZ" // string | 
+    ids := "5CfCWKI5pZ28U0uOzXkDHe,5as3aKmN2k11yfDDDSrvaZ" // string |
     saveShowsUserRequest := *openapiclient.NewSaveShowsUserRequest() // SaveShowsUserRequest |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -477,8 +477,8 @@ Other parameters are passed through a pointer to a apiSaveShowsUserRequest struc
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **string** |  | 
- **saveShowsUserRequest** | [**SaveShowsUserRequest**](SaveShowsUserRequest.md) |  | 
+ **ids** | **string** |  |
+ **saveShowsUserRequest** | [**SaveShowsUserRequest**](SaveShowsUserRequest.md) |  |
 
 ### Return type
 
